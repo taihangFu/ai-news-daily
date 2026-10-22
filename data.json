@@ -1,0 +1,33 @@
+{
+  "headlines": [
+    {
+      "meta": "■ 日报 · 2026年10月22日",
+      "title": "Anthropic 推出 Claude Duet（主動式個人 Agent）",
+      "summary": "Claude Duet 以研究預覽上線，可監控已連應用、做晨間簡報、在雲端虛擬機持續工作，敏感操作需你確認；對標 Meta Muse、OpenAI Dots。"
+    },
+    {
+      "meta": "■ 開源 · 2026年10月22日",
+      "title": "NVIDIA 開源 SkillSpector：掃描 AI Agent Skills 安全風險",
+      "summary": "SkillSpector 可掃描 GitHub／URL／壓縮包裡的 agent skills，覆蓋 prompt injection、資料外洩、惡意 MCP 等模式，並給出 0–100 風險分。"
+    }
+  ],
+  "reports": [
+    {
+      "date": "2026 年 10 月 22 日 周四",
+      "items": [
+        {
+          "tag": "新工具",
+          "title": "Claude Duet",
+          "summary": "主動式個人 Agent，可監控應用並持續工作。為什麼值得關注：戰場從聊天模型轉向會主動做事的 agent。",
+          "footer": "官方相關討論高熱度"
+        },
+        {
+          "tag": "開源",
+          "title": "NVIDIA SkillSpector",
+          "summary": "掃描 agent skills 安全風險，分析逾 3 萬個 skills。為什麼值得關注：超過四分之一有漏洞，約 5% 疑似惡意。",
+          "footer": "GitHub 星數已破 2 萬"
+        }
+      ]
+    }
+  ]
+}
