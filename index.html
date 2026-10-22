@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 新产品 · 每日工具站</title>
+  <style>
+    :root {
+      --bg: #faf8f5;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #3b82f6;
+      --sidebar-bg: #f5f3f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    header {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 700; font-size: 1.25rem; }
+    nav a { margin-left: 24px; text-decoration: none; color: var(--text); font-weight: 500; }
+    nav a:hover { color: var(--accent); }
+    .main { display: grid; grid-template-columns: 1fr 320px; gap: 40px; padding: 40px 0; }
+    .section-title { font-size: 1.5rem; margin-bottom: 20px; font-weight: 700; }
+    .headline {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .headline h2 { font-size: 1.5rem; margin-bottom: 8px; }
+    .headline .meta { color: var(--muted); font-size: 0.875rem; margin-bottom: 12px; }
+    .headline p { color: #374151; }
+    .reports { display: grid; gap: 16px; }
+    .report-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      transition: box-shadow 0.2s;
+    }
+    .report-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    .report-card .tag {
+      display: inline-block;
+      background: #eff6ff;
+      color: var(--accent);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      margin-bottom: 8px;
+    }
+    .report-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+    .report-card p { font-size: 0.9rem; color: #4b5563; margin-bottom: 12px; }
+    .report-card .footer { display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--muted); }
+    .sidebar {
+      background: var(--sidebar-bg);
+      border-radius: 12px;
+      padding: 24px;
+      height: fit-content;
+    }
+    .sidebar h3 { margin-bottom: 16px; }
+    .sidebar p { font-size: 0.9rem; color: #4b5563; margin-bottom: 16px; }
+    .subscribe input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+    .subscribe button {
+      width: 100%;
+      padding: 10px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .date-group { margin-bottom: 32px; }
+    .date-label { font-weight: 600; margin-bottom: 12px; color: var(--muted); }
+    @media (max-width: 900px) {
+      .main { grid-template-columns: 1fr; }
+      .sidebar { order: -1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="logo">AI 新产品 · 每日工具站</div>
+      <nav>
+        <a href="#home">首页</a>
+        <a href="#tools">新工具</a>
+        <a href="#models">新模型</a>
+        <a href="#daily">每日简报</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container main">
+    <main>
+      <section id="home">
+        <h2 class="section-title">今日头条</h2>
+        <div class="headline">
+          <div class="meta">■ 日报 · 10/21</div>
+          <h2>DeepSeek 开源 DeepInfer 推理框架</h2>
+          <p>DeepSeek 正式开源其生产环境使用的推理框架 DeepInfer（Apache-2.0），支持 V4.1-Flash。支持 NVIDIA SM100 与华为 Ascend 950，包含优化内核、投机解码等。社区普遍认为这是继权重开源后，又一层基础设施开放。</p>
+        </div>
+        <div class="headline">
+          <div class="meta">■ 新工具 · 10/21</div>
+          <h2>MiniMax M3.1 Flash 发布</h2>
+          <p>MiniMax 推出 M3.1 Flash，有用户对比 Opus 5 同任务测试，成本显著更低。同时有反馈其绘图能力有提升。</p>
+        </div>
+      </section>
+
+      <section id="reports" style="margin-top: 40px;">
+        <h2 class="section-title">最新报告</h2>
+        
+        <div class="date-group">
+          <div class="date-label">2026 年 10 月 21 日 周三</div>
+          <div class="reports">
+            <div class="report-card">
+              <span class="tag">新工具</span>
+              <h3>DeepSeek DeepInfer</h3>
+              <p>生产级推理框架开源，降低自托管成本。支持离线推理版本。</p>
+              <div class="footer"><span>热度高</span><span>阅读 →</span></div>
+            </div>
+            <div class="report-card">
+              <span class="tag">新模型</span>
+              <h3>MiniMax M3.1 Flash</h3>
+              <p>性价比导向的更新，适合本地或低成本场景。</p>
+              <div class="footer"><span>15 条讨论</span><span>阅读 →</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="date-group">
+          <div class="date-label">2026 年 10 月 20 日 周二</div>
+          <div class="reports">
+            <div class="report-card">
+              <span class="tag">新工具</span>
+              <h3>Google 开源 ARTEMIS</h3>
+              <p>一组数字相关的开源项目，GitHub 上快速获得关注。</p>
+              <div class="footer"><span>19 条</span><span>阅读 →</span></div>
+            </div>
+            <div class="report-card">
+              <span class="tag">话题</span>
+              <h3>AI 的 Gell-Mann 失忆症</h3>
+              <p>英文圈讨论：人们容易对 AI 能力产生选择性遗忘。</p>
+              <div class="footer"><span>18 条</span><span>阅读 →</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <h3>每天的 AI 新工具与产品，来自 X</h3>
+      <p>专注追踪 X 上正在热议的 AI 新产品、新工具、新模型与开源项目。每天由 Grok Bot 辅助扫描高互动帖子，整理成可快速阅读的简报。</p>
+      <div style="margin: 20px 0; padding: 12px; background: white; border-radius: 8px; font-size: 0.85rem;">
+        <strong>关于这个站</strong><br>
+        用 AI 创造价值，把个人能力经营成事业。专注新工具与新产品。
+      </div>
+      <div class="subscribe">
+        <input type="email" placeholder="输入你的邮箱...">
+        <button>订阅每日更新</button>
+        <p style="font-size: 0.75rem; color: var(--muted); margin-top: 8px;">订阅即表示同意接收每日 AI 工具简报</p>
+      </div>
+    </aside>
+  </div>
+  <script>
+    async function loadData() {
+      try {
+        const res = await fetch('data.json');
+        const data = await res.json();
+        
+        // Render headlines
+        const home = document.querySelector('#home');
+        home.innerHTML = '<h2 class="section-title">今日头条</h2>';
+        data.headlines.forEach(h => {
+          const div = document.createElement('div');
+          div.className = 'headline';
+          div.innerHTML = `
+            <div class="meta">${h.meta}</div>
+            <h2>${h.title}</h2>
+            <p>${h.summary}</p>
+          `;
+          home.appendChild(div);
+        });
+
+        // Render reports
+        const reportsSection = document.querySelector('#reports');
+        reportsSection.innerHTML = '<h2 class="section-title">最新报告</h2>';
+        data.reports.forEach(group => {
+          const groupDiv = document.createElement('div');
+          groupDiv.className = 'date-group';
+          groupDiv.innerHTML = `<div class="date-label">${group.date}</div><div class="reports"></div>`;
+          const container = groupDiv.querySelector('.reports');
+          group.items.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'report-card';
+            card.innerHTML = `
+              <span class="tag">${item.tag}</span>
+              <h3>${item.title}</h3>
+              <p>${item.summary}</p>
+              <div class="footer"><span>${item.footer}</span><span>阅读 →</span></div>
+            `;
+            container.appendChild(card);
+          });
+          reportsSection.appendChild(groupDiv);
+        });
+      } catch (e) {
+        console.error('Failed to load data', e);
+      }
+    }
+    loadData();
+  </script>
+</body>
+</html>
