@@ -6,109 +6,110 @@
   <title>AI 新產品 · 每日工具站</title>
   <style>
     :root {
-      --bg: #070708;
-      --card: #121214;
-      --text: #f4f4f5;
-      --muted: #8b8b93;
-      --border: rgba(255,255,255,0.08);
-      --accent: #f4f4f5;
-      --accent-hover: #c8c8d0;
-      --sidebar-bg: #0e0e10;
+      --bg: #f5f5f7;
+      --card: #fff;
+      --text: #1d1d1f;
+      --muted: #6e6e73;
+      --border: #d2d2d7;
+      --accent: #0071e3;
+      --accent-hover: #0077ed;
+      --sidebar-bg: #fff;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", "Microsoft JhengHei", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang TC", "Helvetica Neue", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       background: var(--bg);
-      background-image: radial-gradient(ellipse 80% 50% at 50% -20%, #16162a 0%, transparent 55%);
-      background-attachment: fixed;
       color: var(--text);
       line-height: 1.6;
       min-height: 100vh;
-      position: relative;
-    }
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 9999;
-      opacity: 0.04;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
     header {
-      background: rgba(7,7,8,0.72);
-      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,0.72);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
       padding: 16px 0;
       position: sticky;
       top: 0;
       z-index: 100;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
     }
     .header-inner { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-weight: 700; font-size: 1.25rem; }
+    .logo { font-weight: 600; font-size: 1.25rem; letter-spacing: -0.01em; }
     nav span {
       margin-left: 24px;
       color: var(--muted);
       font-weight: 500;
       font-size: 0.95rem;
     }
-    .main { display: grid; grid-template-columns: 1fr 320px; gap: 40px; padding: 48px 0 40px; }
-    .section-title { font-size: 1.5rem; margin-bottom: 20px; font-weight: 700; }
+    .main { display: grid; grid-template-columns: 1fr 320px; gap: 40px; padding: 64px 0 56px; }
+    .section-title { font-size: 1.5rem; margin-bottom: 20px; font-weight: 600; letter-spacing: -0.02em; }
     .headline {
       background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 36px 32px;
+      border: none;
+      border-radius: 18px;
+      padding: 44px 36px;
       margin-bottom: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
     }
-    .headline h2 { font-size: 2rem; line-height: 1.3; margin-bottom: 16px; font-weight: 700; }
+    .headline h2 {
+      font-size: 2.25rem;
+      line-height: 1.25;
+      margin-bottom: 16px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
     .headline .meta { color: var(--muted); font-size: 0.8125rem; margin-bottom: 16px; letter-spacing: 0.02em; }
     .headline p { color: var(--muted); font-size: 1.05rem; line-height: 1.7; }
     .reports { display: grid; gap: 16px; }
     .report-card {
       background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
+      border: none;
+      border-radius: 18px;
       padding: 20px;
-      transition: border-color 150ms ease, background-color 150ms ease;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+      transition: box-shadow 0.28s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.28s cubic-bezier(0.25, 0.1, 0.25, 1);
     }
-    .report-card:hover { border-color: rgba(255,255,255,0.16); background: #151518; }
+    .report-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
     .report-card .tag {
       display: inline-block;
-      background: rgba(255,255,255,0.06);
+      background: #f5f5f7;
       color: var(--muted);
       padding: 2px 8px;
-      border-radius: 4px;
+      border-radius: 6px;
       font-size: 0.75rem;
       margin-bottom: 8px;
     }
-    .report-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+    .report-card h3 { font-size: 1.1rem; margin-bottom: 8px; font-weight: 600; letter-spacing: -0.01em; }
     .report-card p { font-size: 0.9rem; color: var(--muted); margin-bottom: 12px; }
     .footer { display: flex; justify-content: flex-end; font-size: 0.875rem; }
     .footer a {
       color: var(--accent);
       text-decoration: none;
       font-weight: 600;
-      transition: color 150ms ease;
+      transition: color 0.28s cubic-bezier(0.25, 0.1, 0.25, 1);
     }
     .footer a:hover { color: var(--accent-hover); text-decoration: none; }
     .sidebar {
       background: var(--sidebar-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
+      border: none;
+      border-radius: 18px;
       padding: 24px;
       height: fit-content;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
     }
-    .sidebar h3 { margin-bottom: 16px; }
+    .sidebar h3 { margin-bottom: 16px; font-weight: 600; letter-spacing: -0.01em; }
     .sidebar p { font-size: 0.9rem; color: var(--muted); margin-bottom: 16px; }
     .about-box {
       margin: 20px 0 0;
       padding: 12px;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 8px;
+      background: #f5f5f7;
+      border: none;
+      border-radius: 12px;
       font-size: 0.85rem;
       color: var(--muted);
     }
@@ -116,10 +117,10 @@
     .date-group { margin-bottom: 32px; }
     .date-label { font-weight: 600; margin-bottom: 12px; color: var(--muted); font-size: 0.875rem; }
     @media (max-width: 900px) {
-      .main { grid-template-columns: 1fr; }
+      .main { grid-template-columns: 1fr; padding: 40px 0 48px; }
       .sidebar { order: -1; }
-      .headline { padding: 28px 22px; }
-      .headline h2 { font-size: 1.5rem; }
+      .headline { padding: 32px 24px; }
+      .headline h2 { font-size: 1.75rem; }
     }
   </style>
 </head>
