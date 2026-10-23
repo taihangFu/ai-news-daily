@@ -70,13 +70,14 @@
     }
     .report-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
     .report-card p { font-size: 0.9rem; color: #4b5563; margin-bottom: 12px; }
-    .report-card .footer { display: flex; justify-content: flex-end; font-size: 0.875rem; }
-    .report-card .footer a {
+    .footer { display: flex; font-size: 0.875rem; }
+    .report-card .footer { justify-content: flex-end; }
+    .footer a {
       color: var(--accent);
       text-decoration: none;
       font-weight: 600;
     }
-    .report-card .footer a:hover { text-decoration: underline; }
+    .footer a:hover { text-decoration: underline; }
     .sidebar {
       background: var(--sidebar-bg);
       border-radius: 12px;
@@ -169,10 +170,15 @@
         headlines.forEach(h => {
           const div = document.createElement('div');
           div.className = 'headline';
+          const hLink = h.link || extractUrl(h.footer) || '';
+          const hRead = hLink
+            ? `<div class="footer" style="margin-top:20px;justify-content:flex-start"><a href="${hLink}" target="_blank" rel="noopener noreferrer">閱讀 →</a></div>`
+            : '';
           div.innerHTML = `
             <div class="meta">${h.meta || ''}</div>
             <h2>${h.title || ''}</h2>
             <p>${h.summary || ''}</p>
+            ${hRead}
           `;
           home.appendChild(div);
         });
