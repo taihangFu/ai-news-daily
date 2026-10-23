@@ -1,14 +1,9 @@
 {
   "headlines": [
     {
-      "meta": "■ 日报 · 2026年10月23日",
+      "meta": "■ 日報 · 2026年10月23日",
       "title": "Claude Duet：Anthropic 主動式個人 AI Agent",
       "summary": "Claude 會先找你、在背景把事做完，並在代你發送／付款／簽署前先徵求同意。官方預覽帖互動破千萬瀏覽；與 Grok Bot、Meta Muse、OpenAI Dots 並列「Agent 戰爭」最新玩家，標誌從聊天轉向主動執行。"
-    },
-    {
-      "meta": "■ 日报 · 2026年10月23日",
-      "title": "Carbon-X：用自然語言「跟 DNA 聊天」",
-      "summary": "Hugging Face 以 Qwen3-14B 中訓約 300B DNA／英文 token，釋出 Apache 2.0 的 14B 開源 DNA+語言模型，可本地跑。CEO Clément 親發；五項 DNA 基準平均約 66.7%，把生物 AI 能力開放給實驗室與研究者（非臨床用途）。"
     }
   ],
   "reports": [
@@ -16,46 +11,40 @@
       "date": "2026 年 10 月 23 日 周五",
       "items": [
         {
-          "tag": "新產品",
-          "title": "Claude Duet：Anthropic 主動式個人 AI Agent",
-          "summary": "Claude 會先找你、在背景把事做完，並在代你發送／付款／簽署前先徵求同意。為什麼值得關注：官方預覽帖互動破千萬瀏覽；標誌從聊天轉向主動執行的 Agent 戰爭新一輪。",
-          "footer": "官方預覽 · https://x.com/claudeai/status/2112984664256241837"
-        },
-        {
           "tag": "開源",
           "title": "Carbon-X：開源 DNA+語言模型",
           "summary": "Hugging Face 以 Qwen3-14B 中訓約 300B DNA／英文 token，Apache 2.0、14B、可本地跑。為什麼值得關注：CEO 親發；五項 DNA 基準平均約 66.7%，把生物 AI 開放給實驗室（非臨床）。",
-          "footer": "ClementDelangue · https://x.com/ClementDelangue/status/2113264393756545449"
+          "footer": "https://x.com/ClementDelangue/status/2113264393756545449"
         },
         {
           "tag": "新工具",
           "title": "1Password for Agents",
           "summary": "Agent 碰到登入頁時由你批准，1Password 代填憑證，Agent 本身看不到密碼。為什麼值得關注：與 Claude、Grok Bot、Muse、OpenAI 等多家 Agent 生態合作，解決「要登入但不能碰密鑰」。",
-          "footer": "1Password 官方 · https://x.com/1Password/status/2113276767582498943"
+          "footer": "https://x.com/1Password/status/2113276767582498943"
         },
         {
           "tag": "新模型",
           "title": "Ling-3.1-flash-1019（螞蟻 Ant Ling）",
           "summary": "Artificial Analysis Intelligence Index 由 41 升至 44，Agent 相關基準明顯上漲；API 與開源權重即將開放。為什麼值得關注：官方親發；1M context、偏 agentic，中國 flash 層競賽又緊一分。",
-          "footer": "AntLingAGI · https://x.com/AntLingAGI/status/2113226531522891851"
+          "footer": "https://x.com/AntLingAGI/status/2113226531522891851"
         },
         {
           "tag": "新產品",
           "title": "OpenAI Decisions API 正式 GA",
           "summary": "專做分類／路由／打分，不必生成完整回覆，官方稱可比完整回應更快、更省。為什麼值得關注：正式 GA，並加語音整合、prompt caching、JSON 輸入；適合即時 Agent 決策層。",
-          "footer": "OpenAIDevs · https://x.com/OpenAIDevs/status/2113346642787086538"
+          "footer": "https://x.com/OpenAIDevs/status/2113346642787086538"
         },
         {
           "tag": "新工具",
           "title": "Gemini API CLI（gemini-api）預覽版",
           "summary": "給編碼 Agent 用的指令列：一條命令就能生成圖／影片／語音／音樂、分析媒體、跑 Managed Agents。為什麼值得關注：單一二進位、免猜 model string，對接 Claude Code／Codex 等工作流。",
-          "footer": "LyalinDotCom · https://x.com/LyalinDotCom/status/2113287431382601765"
+          "footer": "https://x.com/LyalinDotCom/status/2113287431382601765"
         },
         {
           "tag": "開源",
           "title": "SGLang-TorchTPU：PyTorch 原生在 TPU 上服務開源模型",
           "summary": "SGLang 與 Google TPU、Meta PyTorch 合作推出 TPU plugin，讓 Muse Spark、GLM、Kimi、Ling 等可在 TPU 上推理。為什麼值得關注：擴大開源模型硬體選擇，對 MoE／Agent 推理成本有實質意義。",
-          "footer": "sgl_project · https://x.com/sgl_project/status/2112948714453262363"
+          "footer": "https://x.com/sgl_project/status/2112948714453262363"
         }
       ]
     }

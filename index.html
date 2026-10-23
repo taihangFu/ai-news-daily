@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI 新产品 · 每日工具站</title>
+  <title>AI 新產品 · 每日工具站</title>
   <style>
     :root {
       --bg: #faf8f5;
@@ -16,7 +16,7 @@
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", "Microsoft JhengHei", sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -32,20 +32,24 @@
     }
     .header-inner { display: flex; justify-content: space-between; align-items: center; }
     .logo { font-weight: 700; font-size: 1.25rem; }
-    nav a { margin-left: 24px; text-decoration: none; color: var(--text); font-weight: 500; }
-    nav a:hover { color: var(--accent); }
-    .main { display: grid; grid-template-columns: 1fr 320px; gap: 40px; padding: 40px 0; }
+    nav span {
+      margin-left: 24px;
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .main { display: grid; grid-template-columns: 1fr 320px; gap: 40px; padding: 48px 0 40px; }
     .section-title { font-size: 1.5rem; margin-bottom: 20px; font-weight: 700; }
     .headline {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px;
-      margin-bottom: 16px;
+      border-radius: 16px;
+      padding: 36px 32px;
+      margin-bottom: 8px;
     }
-    .headline h2 { font-size: 1.5rem; margin-bottom: 8px; }
-    .headline .meta { color: var(--muted); font-size: 0.875rem; margin-bottom: 12px; }
-    .headline p { color: #374151; }
+    .headline h2 { font-size: 2rem; line-height: 1.3; margin-bottom: 16px; font-weight: 700; }
+    .headline .meta { color: var(--muted); font-size: 0.8125rem; margin-bottom: 16px; letter-spacing: 0.02em; }
+    .headline p { color: #374151; font-size: 1.05rem; line-height: 1.7; }
     .reports { display: grid; gap: 16px; }
     .report-card {
       background: var(--card);
@@ -66,7 +70,13 @@
     }
     .report-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
     .report-card p { font-size: 0.9rem; color: #4b5563; margin-bottom: 12px; }
-    .report-card .footer { display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--muted); }
+    .report-card .footer { display: flex; justify-content: flex-end; font-size: 0.875rem; }
+    .report-card .footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .report-card .footer a:hover { text-decoration: underline; }
     .sidebar {
       background: var(--sidebar-bg);
       border-radius: 12px;
@@ -92,22 +102,21 @@
       cursor: pointer;
     }
     .date-group { margin-bottom: 32px; }
-    .date-label { font-weight: 600; margin-bottom: 12px; color: var(--muted); }
+    .date-label { font-weight: 600; margin-bottom: 12px; color: var(--muted); font-size: 0.875rem; }
     @media (max-width: 900px) {
       .main { grid-template-columns: 1fr; }
       .sidebar { order: -1; }
+      .headline { padding: 28px 22px; }
+      .headline h2 { font-size: 1.5rem; }
     }
   </style>
 </head>
 <body>
   <header>
     <div class="container header-inner">
-      <div class="logo">AI 新产品 · 每日工具站</div>
+      <div class="logo">AI 新產品 · 每日工具站</div>
       <nav>
-        <a href="#home">首页</a>
-        <a href="#tools">新工具</a>
-        <a href="#models">新模型</a>
-        <a href="#daily">每日简报</a>
+        <span>首頁</span>
       </nav>
     </div>
   </header>
@@ -115,110 +124,81 @@
   <div class="container main">
     <main>
       <section id="home">
-        <h2 class="section-title">今日头条</h2>
+        <h2 class="section-title">今日頭條</h2>
         <div class="headline">
-          <div class="meta">■ 日报 · 10/21</div>
-          <h2>DeepSeek 开源 DeepInfer 推理框架</h2>
-          <p>DeepSeek 正式开源其生产环境使用的推理框架 DeepInfer（Apache-2.0），支持 V4.1-Flash。支持 NVIDIA SM100 与华为 Ascend 950，包含优化内核、投机解码等。社区普遍认为这是继权重开源后，又一层基础设施开放。</p>
-        </div>
-        <div class="headline">
-          <div class="meta">■ 新工具 · 10/21</div>
-          <h2>MiniMax M3.1 Flash 发布</h2>
-          <p>MiniMax 推出 M3.1 Flash，有用户对比 Opus 5 同任务测试，成本显著更低。同时有反馈其绘图能力有提升。</p>
+          <div class="meta">載入中…</div>
+          <h2></h2>
+          <p></p>
         </div>
       </section>
 
-      <section id="reports" style="margin-top: 40px;">
-        <h2 class="section-title">最新报告</h2>
-        
-        <div class="date-group">
-          <div class="date-label">2026 年 10 月 21 日 周三</div>
-          <div class="reports">
-            <div class="report-card">
-              <span class="tag">新工具</span>
-              <h3>DeepSeek DeepInfer</h3>
-              <p>生产级推理框架开源，降低自托管成本。支持离线推理版本。</p>
-              <div class="footer"><span>热度高</span><span>阅读 →</span></div>
-            </div>
-            <div class="report-card">
-              <span class="tag">新模型</span>
-              <h3>MiniMax M3.1 Flash</h3>
-              <p>性价比导向的更新，适合本地或低成本场景。</p>
-              <div class="footer"><span>15 条讨论</span><span>阅读 →</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="date-group">
-          <div class="date-label">2026 年 10 月 20 日 周二</div>
-          <div class="reports">
-            <div class="report-card">
-              <span class="tag">新工具</span>
-              <h3>Google 开源 ARTEMIS</h3>
-              <p>一组数字相关的开源项目，GitHub 上快速获得关注。</p>
-              <div class="footer"><span>19 条</span><span>阅读 →</span></div>
-            </div>
-            <div class="report-card">
-              <span class="tag">话题</span>
-              <h3>AI 的 Gell-Mann 失忆症</h3>
-              <p>英文圈讨论：人们容易对 AI 能力产生选择性遗忘。</p>
-              <div class="footer"><span>18 条</span><span>阅读 →</span></div>
-            </div>
-          </div>
-        </div>
+      <section id="reports" style="margin-top: 48px;">
+        <h2 class="section-title">最新報告</h2>
       </section>
     </main>
 
     <aside class="sidebar">
-      <h3>每天的 AI 新工具与产品，来自 X</h3>
-      <p>专注追踪 X 上正在热议的 AI 新产品、新工具、新模型与开源项目。每天由 Grok Bot 辅助扫描高互动帖子，整理成可快速阅读的简报。</p>
+      <h3>每天的 AI 新工具與產品，來自 X</h3>
+      <p>專注追蹤 X 上正在熱議的 AI 新產品、新工具、新模型與開源項目。每天由 Grok Bot 輔助掃描高互動帖子，整理成可快速閱讀的簡報。</p>
       <div style="margin: 20px 0; padding: 12px; background: white; border-radius: 8px; font-size: 0.85rem;">
-        <strong>关于这个站</strong><br>
-        用 AI 创造价值，把个人能力经营成事业。专注新工具与新产品。
+        <strong>關於這個站</strong><br>
+        用 AI 創造價值，把個人能力經營成事業。專注新工具與新產品。
       </div>
       <div class="subscribe">
-        <input type="email" placeholder="输入你的邮箱...">
-        <button>订阅每日更新</button>
-        <p style="font-size: 0.75rem; color: var(--muted); margin-top: 8px;">订阅即表示同意接收每日 AI 工具简报</p>
+        <input type="email" placeholder="輸入你的信箱…">
+        <button>訂閱每日更新</button>
+        <p style="font-size: 0.75rem; color: var(--muted); margin-top: 8px;">訂閱即表示同意接收每日 AI 工具簡報</p>
       </div>
     </aside>
   </div>
   <script>
+    function extractUrl(footer) {
+      if (!footer) return '';
+      const m = String(footer).match(/https?:\/\/\S+/);
+      return m ? m[0] : '';
+    }
+
     async function loadData() {
       try {
-        const res = await fetch('data.json');
+        const res = await fetch('data.json?t=' + Date.now());
         const data = await res.json();
-        
-        // Render headlines
+
         const home = document.querySelector('#home');
-        home.innerHTML = '<h2 class="section-title">今日头条</h2>';
-        data.headlines.forEach(h => {
+        home.innerHTML = '<h2 class="section-title">今日頭條</h2>';
+        const headlines = (data.headlines || []).slice(0, 1);
+        headlines.forEach(h => {
           const div = document.createElement('div');
           div.className = 'headline';
           div.innerHTML = `
-            <div class="meta">${h.meta}</div>
-            <h2>${h.title}</h2>
-            <p>${h.summary}</p>
+            <div class="meta">${h.meta || ''}</div>
+            <h2>${h.title || ''}</h2>
+            <p>${h.summary || ''}</p>
           `;
           home.appendChild(div);
         });
 
-        // Render reports
+        const headlineTitles = new Set(headlines.map(h => (h.title || '').trim()));
         const reportsSection = document.querySelector('#reports');
-        reportsSection.innerHTML = '<h2 class="section-title">最新报告</h2>';
-        data.reports.forEach(group => {
+        reportsSection.innerHTML = '<h2 class="section-title">最新報告</h2>';
+        (data.reports || []).forEach(group => {
+          const items = (group.items || []).filter(item => !headlineTitles.has((item.title || '').trim()));
+          if (!items.length) return;
           const groupDiv = document.createElement('div');
           groupDiv.className = 'date-group';
-          groupDiv.innerHTML = `<div class="date-label">${group.date}</div><div class="reports"></div>`;
+          groupDiv.innerHTML = `<div class="date-label">${group.date || ''}</div><div class="reports"></div>`;
           const container = groupDiv.querySelector('.reports');
-          group.items.forEach(item => {
+          items.forEach(item => {
+            const url = extractUrl(item.footer);
             const card = document.createElement('div');
             card.className = 'report-card';
+            const readLink = url
+              ? `<a href="${url}" target="_blank" rel="noopener noreferrer">閱讀 →</a>`
+              : `<span style="color:var(--muted)">閱讀 →</span>`;
             card.innerHTML = `
-              <span class="tag">${item.tag}</span>
-              <h3>${item.title}</h3>
-              <p>${item.summary}</p>
-              <div class="footer"><span>${item.footer}</span><span>阅读 →</span></div>
+              <span class="tag">${item.tag || ''}</span>
+              <h3>${item.title || ''}</h3>
+              <p>${item.summary || ''}</p>
+              <div class="footer">${readLink}</div>
             `;
             container.appendChild(card);
           });
