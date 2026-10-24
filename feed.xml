@@ -1,59 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
-<title>AI 新產品 · 每日工具站</title>
+<title>AI 新工具日報</title>
 <link>https://taihangfu.github.io/ai-news-daily/</link>
 <description>每日來自 X 的 AI 新工具與產品簡報</description>
 <language>zh-Hant</language>
-<lastBuildDate>Fri, 23 Oct 2026 09:00:00 +0800</lastBuildDate>
+<lastBuildDate>Sat, 24 Oct 2026 09:00:00 +0800</lastBuildDate>
 <item>
-<title>Claude Duet：Anthropic 主動式個人 AI Agent</title>
-<link>https://x.com/claudeai/status/2112984664256241837</link>
-<guid isPermaLink="true">https://x.com/claudeai/status/2112984664256241837</guid>
-<description>Claude 會先找你、在背景把事做完，並在代你發送／付款／簽署前先徵求同意。官方預覽帖互動破千萬瀏覽；標誌從聊天轉向主動執行的 Agent 戰爭新一輪。</description>
-<pubDate>Fri, 23 Oct 2026 09:00:00 +0800</pubDate>
+<title>Moonshot 推出 Kimi K3.1 Pro：2.8T MoE、百萬上下文，開源權重預計 11 月 4 日</title>
+<link>https://x.com/Kimi_Moonshot/status/2113680701770068067</link>
+<guid isPermaLink="true">https://x.com/Kimi_Moonshot/status/2113680701770068067</guid>
+<description>Moonshot 發布 Kimi K3.1 Pro：2.8T 總參／104B 啟用 MoE、多模態、1M 上下文；官方 blog 稱 Terminal-Bench 4.0 達 65.7%、逼近 Claude Opus 5.5，API 已上線，開源權重預計 2026 年 11 月 4 日。</description>
+<pubDate>Sat, 24 Oct 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>Carbon-X：開源 DNA+語言模型</title>
-<link>https://x.com/ClementDelangue/status/2113264393756545449</link>
-<guid isPermaLink="true">https://x.com/ClementDelangue/status/2113264393756545449</guid>
-<description>Hugging Face 以 Qwen3-14B 中訓約 300B DNA／英文 token，Apache 2.0、14B、可本地跑。為什麼值得關注：CEO 親發；五項 DNA 基準平均約 66.7%，把生物 AI 開放給實驗室（非臨床）。</description>
-<pubDate>Fri, 23 Oct 2026 09:00:00 +0800</pubDate>
+<title>Block 發布 Dessa：全雙工語音對語音，報導可於 M4 Max 級 MacBook Pro 跑</title>
+<link>https://x.com/jack/status/2113697902916751661</link>
+<guid isPermaLink="true">https://x.com/jack/status/2113697902916751661</guid>
+<description>Jack Dorsey 宣布 Dessa，強調不經文字 LLM、純語音訓練的全雙工對話，節奏與情緒更像真人；報導稱可在 MacBook Pro M4 Max 或以上運行。語音介面產品化訊號強，值得關注本地／端側語音路線。</description>
+<pubDate>Sat, 24 Oct 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>1Password for Agents</title>
-<link>https://x.com/1Password/status/2113276767582498943</link>
-<guid isPermaLink="true">https://x.com/1Password/status/2113276767582498943</guid>
-<description>Agent 碰到登入頁時由你批准，1Password 代填憑證，Agent 本身看不到密碼。為什麼值得關注：與多家 Agent 生態合作，解決「要登入但不能碰密鑰」。</description>
-<pubDate>Fri, 23 Oct 2026 09:00:00 +0800</pubDate>
+<title>MiniMax 開源 M3.1 Flash 權重：428B MoE、23B 啟用</title>
+<link>https://x.com/MiniMax_AI/status/2113436864904610008</link>
+<guid isPermaLink="true">https://x.com/MiniMax_AI/status/2113436864904610008</guid>
+<description>官方公開 M3.1 Flash 權重（曾以 Space Bunny 登頂排行榜），主打 agentic／程式碼／資安與高性價比推理；Hugging Face 與 ModelScope 可下載。開源權重戰又添一枚可自架的前沿 MoE。</description>
+<pubDate>Sat, 24 Oct 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>Ling-3.1-flash-1019（螞蟻 Ant Ling）</title>
-<link>https://x.com/AntLingAGI/status/2113226531522891851</link>
-<guid isPermaLink="true">https://x.com/AntLingAGI/status/2113226531522891851</guid>
-<description>Artificial Analysis Intelligence Index 由 41 升至 44，Agent 相關基準明顯上漲；API 與開源權重即將開放。為什麼值得關注：1M context、偏 agentic，中國 flash 層競賽又緊一分。</description>
-<pubDate>Fri, 23 Oct 2026 09:00:00 +0800</pubDate>
-</item>
-<item>
-<title>OpenAI Decisions API 正式 GA</title>
-<link>https://x.com/OpenAIDevs/status/2113346642787086538</link>
-<guid isPermaLink="true">https://x.com/OpenAIDevs/status/2113346642787086538</guid>
-<description>專做分類／路由／打分，不必生成完整回覆，官方稱可比完整回應更快、更省。為什麼值得關注：正式 GA，適合即時 Agent 決策層。</description>
-<pubDate>Fri, 23 Oct 2026 09:00:00 +0800</pubDate>
-</item>
-<item>
-<title>Gemini API CLI（gemini-api）預覽版</title>
-<link>https://x.com/LyalinDotCom/status/2113287431382601765</link>
-<guid isPermaLink="true">https://x.com/LyalinDotCom/status/2113287431382601765</guid>
-<description>給編碼 Agent 用的指令列：一條命令就能生成圖／影片／語音／音樂、分析媒體、跑 Managed Agents。為什麼值得關注：單一二進位、免猜 model string。</description>
-<pubDate>Fri, 23 Oct 2026 09:00:00 +0800</pubDate>
-</item>
-<item>
-<title>SGLang-TorchTPU：PyTorch 原生在 TPU 上服務開源模型</title>
-<link>https://x.com/sgl_project/status/2112948714453262363</link>
-<guid isPermaLink="true">https://x.com/sgl_project/status/2112948714453262363</guid>
-<description>SGLang 與 Google TPU、Meta PyTorch 合作推出 TPU plugin。為什麼值得關注：擴大開源模型硬體選擇，對 MoE／Agent 推理成本有實質意義。</description>
-<pubDate>Fri, 23 Oct 2026 09:00:00 +0800</pubDate>
+<title>NVIDIA 發布 Nemotron 3.5 Bolt E4B 4GB：端側助理與機器人</title>
+<link>https://x.com/NVIDIAAI/status/2113657112408785153</link>
+<guid isPermaLink="true">https://x.com/NVIDIAAI/status/2113657112408785153</guid>
+<description>專為本地助理、互動角色與機器人設計的小型開源模型，權重／資料／配方一併公開；示範在 Jetson Orin Nano 8GB 上與 Cosmos 聯動做本地對話與工具呼叫。邊緣部署與機器人本地推理門檻再降。</description>
+<pubDate>Sat, 24 Oct 2026 09:00:00 +0800</pubDate>
 </item>
 </channel>
 </rss>

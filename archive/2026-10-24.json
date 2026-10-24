@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "headlines": [
+    {
+      "meta": "日報 · 2026年10月24日",
+      "title": "Moonshot 推出 Kimi K3.1 Pro：2.8T MoE、百萬上下文，開源權重預計 11 月 4 日",
+      "summary": "Moonshot 發布 Kimi K3.1 Pro：2.8T 總參／104B 啟用 MoE、多模態、1M 上下文；官方 blog 稱 Terminal-Bench 4.0 達 65.7%、逼近 Claude Opus 5.5，API 已上線，開源權重預計 2026 年 11 月 4 日。",
+      "link": "https://x.com/Kimi_Moonshot/status/2113680701770068067"
+    }
+  ],
+  "reports": [
+    {
+      "date": "2026 年 10 月 24 日 週六",
+      "items": [
+        {
+          "tag": "新模型",
+          "title": "Block 發布 Dessa：全雙工語音對語音，報導可於 M4 Max 級 MacBook Pro 跑",
+          "summary": "Jack Dorsey 宣布 Dessa，強調不經文字 LLM、純語音訓練的全雙工對話，節奏與情緒更像真人；報導稱可在 MacBook Pro M4 Max 或以上運行。語音介面產品化訊號強，值得關注本地／端側語音路線。",
+          "footer": "https://x.com/jack/status/2113697902916751661"
+        },
+        {
+          "tag": "開源",
+          "title": "MiniMax 開源 M3.1 Flash 權重：428B MoE、23B 啟用",
+          "summary": "官方公開 M3.1 Flash 權重（曾以 Space Bunny 登頂排行榜），主打 agentic／程式碼／資安與高性價比推理；Hugging Face 與 ModelScope 可下載。開源權重戰又添一枚可自架的前沿 MoE。",
+          "footer": "https://x.com/MiniMax_AI/status/2113436864904610008"
+        },
+        {
+          "tag": "新模型",
+          "title": "NVIDIA 發布 Nemotron 3.5 Bolt E4B 4GB：端側助理與機器人",
+          "summary": "專為本地助理、互動角色與機器人設計的小型開源模型，權重／資料／配方一併公開；示範在 Jetson Orin Nano 8GB 上與 Cosmos 聯動做本地對話與工具呼叫。邊緣部署與機器人本地推理門檻再降。",
+          "footer": "https://x.com/NVIDIAAI/status/2113657112408785153"
+        }
+      ]
+    }
+  ]
+}
