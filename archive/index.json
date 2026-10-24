@@ -1,10 +1,8 @@
-[
-  {
-    "date": "2026-10-24",
-    "path": "archive/2026-10-24.json"
-  },
-  {
-    "date": "2026-10-23",
-    "path": "archive/2026-10-23.json"
-  }
-]
+{
+  "schemaVersion": 1,
+  "earliest": "2026-10-23",
+  "dates": [
+    { "date": "2026-10-24", "path": "archive/2026-10-24.json" },
+    { "date": "2026-10-23", "path": "archive/2026-10-23.json" }
+  ]
+}
