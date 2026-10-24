@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI 新工具日報</title>
+  <link rel="alternate" type="application/rss+xml" title="AI 新工具日報" href="feed.xml">
   <style>
     :root {
       --bg: #f5f5f7;
@@ -183,6 +184,14 @@
       box-shadow: none;
     }
     .site-footer .about-box strong { color: var(--text); }
+    .site-footer .rss-link {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.85rem;
+      color: #86868b;
+      text-decoration: none;
+    }
+    .site-footer .rss-link:hover { color: #0071e3; }
     .date-group { margin-bottom: 32px; }
     .date-label { font-weight: 600; margin-bottom: 12px; color: var(--muted); font-size: 0.875rem; }
     @media (max-width: 900px) {
@@ -197,9 +206,6 @@
   <header>
     <div class="container header-inner">
       <div class="logo">AI 新工具日報</div>
-      <nav>
-        <span>首頁</span>
-      </nav>
     </div>
   </header>
 
@@ -236,6 +242,7 @@
       <strong>關於這個站</strong><br>
       用 AI 創造價值，把個人能力經營成事業。專注新工具與新產品。
     </div>
+    <a class="rss-link" href="feed.xml">訂閱 RSS</a>
   </footer>
   <script>
     function extractUrl(footer) {
