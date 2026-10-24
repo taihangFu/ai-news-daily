@@ -335,7 +335,10 @@
         const data = await res.json();
 
         const home = document.querySelector('#home');
-        home.innerHTML = '<h2 class="section-title">今日頭條</h2>';
+        const isToday = currentDate === todayISO();
+        const headlinesTitle = isToday ? '今日頭條' : (formatListLabel(currentDate) + '頭條');
+        const reportsTitle = isToday ? '最新報告' : '當日重點';
+        home.innerHTML = '<h2 class="section-title">' + headlinesTitle + '</h2>';
         const headlines = (data.headlines || []).slice(0, 1);
         headlines.forEach(h => {
           const div = document.createElement('div');
@@ -355,7 +358,7 @@
 
         const headlineTitles = new Set(headlines.map(h => (h.title || '').trim()));
         const reportsSection = document.querySelector('#reports');
-        reportsSection.innerHTML = '<h2 class="section-title">最新報告</h2>';
+        reportsSection.innerHTML = '<h2 class="section-title">' + reportsTitle + '</h2>';
         (data.reports || []).forEach(group => {
           const items = (group.items || []).filter(item => !headlineTitles.has((item.title || '').trim()));
           if (!items.length) return;
