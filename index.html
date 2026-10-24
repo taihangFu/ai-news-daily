@@ -49,6 +49,64 @@
       margin: 0 auto;
       padding: 56px 0 0;
     }
+    .date-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      margin-bottom: 28px;
+      font-size: 0.875rem;
+      color: #86868b;
+    }
+    .date-nav[hidden] { display: none !important; }
+    .date-nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .date-nav-arrow {
+      background: none;
+      border: none;
+      color: #86868b;
+      font-size: 1.125rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 4px 6px;
+      font-family: inherit;
+    }
+    .date-nav-arrow:hover:not(:disabled) { color: #1d1d1f; }
+    .date-nav-arrow:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
+    .date-nav-label {
+      color: #1d1d1f;
+      font-weight: 500;
+      min-width: 4.5em;
+      text-align: center;
+    }
+    .date-nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      justify-content: flex-end;
+    }
+    .date-nav-list button {
+      background: none;
+      border: none;
+      color: #86868b;
+      font-size: 0.875rem;
+      font-family: inherit;
+      cursor: pointer;
+      padding: 0;
+      line-height: 1.4;
+    }
+    .date-nav-list button:hover { color: #1d1d1f; }
+    .date-nav-list button.is-active {
+      color: #1d1d1f;
+      font-weight: 500;
+    }
     .section-title { font-size: 1.5rem; margin-bottom: 20px; font-weight: 600; letter-spacing: -0.02em; }
     .headline {
       background: var(--card);
@@ -146,6 +204,15 @@
   </header>
 
   <div class="container main">
+    <nav class="date-nav" id="date-nav" hidden aria-label="歷史日期">
+      <div class="date-nav-controls">
+        <button type="button" class="date-nav-arrow" id="date-prev" aria-label="較早一日">‹</button>
+        <span class="date-nav-label" id="date-label">今日</span>
+        <button type="button" class="date-nav-arrow" id="date-next" aria-label="較近一日">›</button>
+      </div>
+      <div class="date-nav-list" id="date-list"></div>
+    </nav>
+
     <main>
       <section id="home">
         <h2 class="section-title">今日頭條</h2>
@@ -177,9 +244,94 @@
       return m ? m[0] : '';
     }
 
-    async function loadData() {
+    function todayISO() {
+      return new Intl.DateTimeFormat('en-CA', {
+        timeZone: 'Asia/Hong_Kong',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+      }).format(new Date());
+    }
+
+    function formatDayLabel(iso) {
+      if (iso === todayISO()) return '今日';
+      const parts = iso.split('-');
+      const m = parseInt(parts[1], 10);
+      const d = parseInt(parts[2], 10);
+      return m + '月' + d + '日';
+    }
+
+    function formatListLabel(iso) {
+      const parts = iso.split('-');
+      const m = parseInt(parts[1], 10);
+      const d = parseInt(parts[2], 10);
+      return m + '月' + d + '日';
+    }
+
+    let archiveDates = [];
+    let timeline = [];
+    let currentDate = todayISO();
+
+    function pathForDate(iso) {
+      if (iso === todayISO()) return 'data.json';
+      const entry = archiveDates.find(function (e) { return e && e.date === iso; });
+      return entry && entry.path ? entry.path : null;
+    }
+
+    function buildTimeline() {
+      const set = new Set();
+      archiveDates.forEach(function (e) {
+        if (e && e.date) set.add(e.date);
+      });
+      set.add(todayISO());
+      return Array.from(set).sort();
+    }
+
+    function renderDateNav() {
+      const nav = document.getElementById('date-nav');
+      if (!archiveDates.length) {
+        nav.hidden = true;
+        return;
+      }
+      nav.hidden = false;
+      timeline = buildTimeline();
+      document.getElementById('date-label').textContent = formatDayLabel(currentDate);
+
+      const idx = timeline.indexOf(currentDate);
+      const prevBtn = document.getElementById('date-prev');
+      const nextBtn = document.getElementById('date-next');
+      prevBtn.disabled = idx <= 0;
+      nextBtn.disabled = idx < 0 || idx >= timeline.length - 1;
+
+      const list = document.getElementById('date-list');
+      list.innerHTML = '';
+      archiveDates.forEach(function (e) {
+        if (!e || !e.date) return;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = formatListLabel(e.date);
+        if (e.date === currentDate) {
+          btn.className = 'is-active';
+          btn.setAttribute('aria-current', 'true');
+        }
+        btn.addEventListener('click', function () { selectDate(e.date); });
+        list.appendChild(btn);
+      });
+    }
+
+    async function selectDate(iso) {
+      if (!iso || iso === currentDate) return;
+      const path = pathForDate(iso);
+      if (!path && iso !== todayISO()) return;
+      currentDate = iso;
+      renderDateNav();
+      await loadData(pathForDate(iso) || 'data.json');
+    }
+
+    async function loadData(url) {
+      const src = url || 'data.json';
       try {
-        const res = await fetch('data.json?t=' + Date.now());
+        const res = await fetch(src + (src.indexOf('?') >= 0 ? '&' : '?') + 't=' + Date.now());
         const data = await res.json();
 
         const home = document.querySelector('#home');
@@ -232,7 +384,31 @@
         console.error('Failed to load data', e);
       }
     }
-    loadData();
+
+    async function init() {
+      try {
+        const res = await fetch('archive/index.json?t=' + Date.now());
+        if (res.ok) {
+          const index = await res.json();
+          archiveDates = Array.isArray(index.dates) ? index.dates : [];
+        }
+      } catch (e) {
+        archiveDates = [];
+      }
+      currentDate = todayISO();
+      renderDateNav();
+      document.getElementById('date-prev').addEventListener('click', function () {
+        const idx = timeline.indexOf(currentDate);
+        if (idx > 0) selectDate(timeline[idx - 1]);
+      });
+      document.getElementById('date-next').addEventListener('click', function () {
+        const idx = timeline.indexOf(currentDate);
+        if (idx >= 0 && idx < timeline.length - 1) selectDate(timeline[idx + 1]);
+      });
+      await loadData('data.json');
+    }
+
+    init();
   </script>
 </body>
 </html>
