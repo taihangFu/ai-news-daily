@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "headlines": [
+    {
+      "meta": "日報 · 2026年10月25日",
+      "title": "Ant Ling 開源 Ling-3.0-flash-Sante：醫療強化 MoE，124B／5.1B 啟用",
+      "summary": "螞蟻百靈（Ant Ling）正式開源醫療強化模型 Ling-3.0-flash-Sante：124B 總參、每 token 僅啟用約 5.1B、256K 上下文；官方稱 HealthBench Professional、MedQA-USMLE 等專業任務領先同級 flash，並強化工具呼叫與多代理研究。權重已公開，標註研究用途、非醫療器材。",
+      "link": "https://x.com/AntLingAGI/status/2113293431435149349"
+    }
+  ],
+  "reports": [
+    {
+      "date": "2026 年 10 月 25 日 週日",
+      "items": [
+        {
+          "tag": "基礎設施",
+          "title": "Chroma 宣布加入 Replit；Chroma Cloud 將逐步下線",
+          "summary": "向量庫 Chroma 與 Replit 達成最終協議，目標共建「自動駕駛公司」的上下文層；官方同步公布 Cloud 風控：11 月 22 日只讀、12 月 22 日停止讀取。開源 ChromaDB 仍維持 Apache 2.0——用 Cloud 的團隊需盡早遷移。",
+          "footer": "https://x.com/trychroma/status/2113677289334706274"
+        },
+        {
+          "tag": "開源",
+          "title": "FigCraft：Rust 原生開源設計器，AI agent 可經 MCP 操作畫布",
+          "summary": "開源 Figma 替代 FigCraft（Rust 自研）近期熱度上升：支援 frames、auto layout、元件與原型，並強調 agent 可經 MCP／CLI 直接改畫布，而非只吐 PNG。適合「設計系統＋編碼 agent」工作流試水。",
+          "footer": "https://x.com/RoundtableSpace/status/2113952392605823436"
+        },
+        {
+          "tag": "開源",
+          "title": "Kronos 爆紅：金融 K 線基礎模型，本週 GitHub 星數急衝",
+          "summary": "開源金融基礎模型 Kronos（以蠟燭圖／OHLCV 為「語言」、訓練自 45+ 交易所）本週在 finance＋AI 倉庫成長榜居首；程式碼早前已公開，近期被重新發現後星數暴增。屬高噪音市場預測實驗，非交易保證。",
+          "footer": "https://x.com/gusik4ever/status/2114001885413716163"
+        }
+      ]
+    }
+  ]
+}
