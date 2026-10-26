@@ -2,33 +2,33 @@
   "schemaVersion": 1,
   "headlines": [
     {
-      "meta": "日報 · 2026年10月25日",
-      "title": "Ant Ling 開源 Ling-3.0-flash-Sante：醫療強化 MoE，124B／5.1B 啟用",
-      "summary": "螞蟻百靈（Ant Ling）正式開源醫療強化模型 Ling-3.0-flash-Sante：124B 總參、每 token 僅啟用約 5.1B、256K 上下文；官方稱 HealthBench Professional、MedQA-USMLE 等專業任務領先同級 flash，並強化工具呼叫與多代理研究。權重已公開，標註研究用途、非醫療器材。",
-      "link": "https://x.com/AntLingAGI/status/2113293431435149349"
+      "meta": "日報 · 2026年10月26日",
+      "title": "Nanbeige4.3-33B 開源：約 30B 級 Agent 模型，Apache 2.0／512K 上下文",
+      "summary": "BOSS 直聘 Nanbeige 實驗室正式發布 Nanbeige4.3-33B：33B 稠密權重、Apache 2.0、512K 上下文，官方稱在 Terminal-Bench 等 agentic coding／cowork 基準領先 Qwen3.8-27B 等同級開源模型，並作為後續 3B 學生模型的教師。權重已上 Hugging Face，適合本地／自架 agent 試水。",
+      "link": "https://x.com/nanbeige/status/2114328933181333798"
     }
   ],
   "reports": [
     {
-      "date": "2026 年 10 月 25 日 週日",
+      "date": "2026 年 10 月 26 日 週一",
       "items": [
         {
-          "tag": "基礎設施",
-          "title": "Chroma 宣布加入 Replit；Chroma Cloud 將逐步下線",
-          "summary": "向量庫 Chroma 與 Replit 達成最終協議，目標共建「自動駕駛公司」的上下文層；官方同步公布 Cloud 風控：11 月 22 日只讀、12 月 22 日停止讀取。開源 ChromaDB 仍維持 Apache 2.0——用 Cloud 的團隊需盡早遷移。",
-          "footer": "https://x.com/trychroma/status/2113677289334706274"
+          "tag": "開源",
+          "title": "HyperFlow Infinity：遞迴 agent 開源，單次生成無限長影片",
+          "summary": "VIDEO REBIRTH 開源 HyperFlow Infinity——以「生成一鏡→觀看→更新記憶→導下一鏡」的極簡 agent harness 做無限長影片；官方示範單次連續產出 60 分鐘《Alice in Wonderland》。適合長敘事／影片 agent 工作流研究。",
+          "footer": "https://x.com/video_rebirth/status/2114331341806592422"
         },
         {
           "tag": "開源",
-          "title": "FigCraft：Rust 原生開源設計器，AI agent 可經 MCP 操作畫布",
-          "summary": "開源 Figma 替代 FigCraft（Rust 自研）近期熱度上升：支援 frames、auto layout、元件與原型，並強調 agent 可經 MCP／CLI 直接改畫布，而非只吐 PNG。適合「設計系統＋編碼 agent」工作流試水。",
-          "footer": "https://x.com/RoundtableSpace/status/2113952392605823436"
+          "title": "Basilisk：開源 LLM 紅隊框架，33 模組對齊 OWASP Top 10",
+          "summary": "開源紅隊工具 Basilisk 在社群熱傳：內建 33 個攻擊模組（對齊 OWASP LLM Top 10）、可進化 jailbreak、測 prompt injection／資料外洩／工具濫用，並產出可簽署稽核報告。僅限授權系統測試；安全團隊可作回歸巡檢起點。",
+          "footer": "https://x.com/MAXdeg0/status/2114247743531012339"
         },
         {
           "tag": "開源",
-          "title": "Kronos 爆紅：金融 K 線基礎模型，本週 GitHub 星數急衝",
-          "summary": "開源金融基礎模型 Kronos（以蠟燭圖／OHLCV 為「語言」、訓練自 45+ 交易所）本週在 finance＋AI 倉庫成長榜居首；程式碼早前已公開，近期被重新發現後星數暴增。屬高噪音市場預測實驗，非交易保證。",
-          "footer": "https://x.com/gusik4ever/status/2114001885413716163"
+          "title": "Strata 0.2.6：消費級顯卡本地跑 DeepSeek 再加速",
+          "summary": "本地推理引擎 Strata 釋出 0.2.6，社群實測在 16GB 消費級卡＋大記憶體上跑 DeepSeek-V4.1-Flash 生成速度近乎翻倍（約 10→17–23 tok/s）。繼續強化「大 MoE 下沉到家用硬體」路徑，本地 agent 玩家可升級試速。",
+          "footer": "https://x.com/NFT_Chen/status/2114426304716288034"
         }
       ]
     }

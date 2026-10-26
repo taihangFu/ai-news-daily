@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "headlines": [
+    {
+      "meta": "日報 · 2026年10月26日",
+      "title": "Nanbeige4.3-33B 開源：約 30B 級 Agent 模型，Apache 2.0／512K 上下文",
+      "summary": "BOSS 直聘 Nanbeige 實驗室正式發布 Nanbeige4.3-33B：33B 稠密權重、Apache 2.0、512K 上下文，官方稱在 Terminal-Bench 等 agentic coding／cowork 基準領先 Qwen3.8-27B 等同級開源模型，並作為後續 3B 學生模型的教師。權重已上 Hugging Face，適合本地／自架 agent 試水。",
+      "link": "https://x.com/nanbeige/status/2114328933181333798"
+    }
+  ],
+  "reports": [
+    {
+      "date": "2026 年 10 月 26 日 週一",
+      "items": [
+        {
+          "tag": "開源",
+          "title": "HyperFlow Infinity：遞迴 agent 開源，單次生成無限長影片",
+          "summary": "VIDEO REBIRTH 開源 HyperFlow Infinity——以「生成一鏡→觀看→更新記憶→導下一鏡」的極簡 agent harness 做無限長影片；官方示範單次連續產出 60 分鐘《Alice in Wonderland》。適合長敘事／影片 agent 工作流研究。",
+          "footer": "https://x.com/video_rebirth/status/2114331341806592422"
+        },
+        {
+          "tag": "開源",
+          "title": "Basilisk：開源 LLM 紅隊框架，33 模組對齊 OWASP Top 10",
+          "summary": "開源紅隊工具 Basilisk 在社群熱傳：內建 33 個攻擊模組（對齊 OWASP LLM Top 10）、可進化 jailbreak、測 prompt injection／資料外洩／工具濫用，並產出可簽署稽核報告。僅限授權系統測試；安全團隊可作回歸巡檢起點。",
+          "footer": "https://x.com/MAXdeg0/status/2114247743531012339"
+        },
+        {
+          "tag": "開源",
+          "title": "Strata 0.2.6：消費級顯卡本地跑 DeepSeek 再加速",
+          "summary": "本地推理引擎 Strata 釋出 0.2.6，社群實測在 16GB 消費級卡＋大記憶體上跑 DeepSeek-V4.1-Flash 生成速度近乎翻倍（約 10→17–23 tok/s）。繼續強化「大 MoE 下沉到家用硬體」路徑，本地 agent 玩家可升級試速。",
+          "footer": "https://x.com/NFT_Chen/status/2114426304716288034"
+        }
+      ]
+    }
+  ]
+}
