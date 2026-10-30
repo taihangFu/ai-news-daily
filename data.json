@@ -5,7 +5,12 @@
       "meta": "日報 · 2026年10月30日",
       "title": "Mistral 開源 Le Chonk 權重：約 1T MoE，主打 agentic coding 與資安",
       "summary": "Mistral AI 正式釋出新一代 Le Chonk 開源權重：社群與官方敘事指約 1.05T 參數 MoE（每 token 約啟用 52B）、多模態、長上下文；官方稱在 Cognition FrontierCode 開源榜居首，並經 CrowdStrike、Cloudflare 等資安廠商驗證。權重已上 Hugging Face，可用 Mistral Forge 客製部署。",
-      "link": "https://x.com/MistralAI/status/2115811242556137820"
+      "link": "https://x.com/MistralAI/status/2115811242556137820",
+      "community": {
+        "teaser": "開源第一的說法很熱，但授權與部署成本也被盯上。",
+        "voices": "原帖約 48 萬次曝光、5 千讚、387 則引用。討論集中：FrontierCode 開源榜第一、token 效率對照 GLM-5.3、修改版 MIT（MaaS 需另簽）、可自架與資安實測。",
+        "note": "今日主線仍是「可下載的大模型權重」。讀授權條款與硬體門檻，比追暱稱更有用。"
+      }
     }
   ],
   "reports": [
@@ -16,13 +21,23 @@
           "tag": "開源",
           "title": "Pika H3 Flex：Day-1 開源影片模型，15 秒帶聲約 7 秒出片",
           "summary": "Pika 推出 H3 Flex：以 MiniMax H3 後訓練的開源權重影片模型，官方稱 DesignArena t2v 開源榜第一；支援可匯出音軌、最高約 4K，並強調可在約 7 秒內產出 15 秒帶聲片段。權重上 Hugging Face，並提供 GitHub／Diffusers／ComfyUI 路徑。",
-          "footer": "https://x.com/pika_labs/status/2115860471215788262"
+          "footer": "https://x.com/pika_labs/status/2115860471215788262",
+          "community": {
+            "teaser": "創作者搶測速度與音軌；開源榜第一成主敘事。",
+            "voices": "原帖約 30 萬次曝光、146 則引用。側重視覺／音訊測試、DesignArena 開源 t2v 榜、與 H3Max／Seedance 比速、ComfyUI／LoRA 本地路徑。",
+            "note": "開源影片權重若真能「快迭代＋分軌」，創作管線會變。先看本地算力與授權，再談榜單。"
+          }
         },
         {
           "tag": "產品",
           "title": "Snaptrude Agent：建築設計 AI agent，從基地做到 LOD 400",
           "summary": "Snaptrude 創辦人宣布推出 Agent：可與設計師協作，從基地方案一路做到接近施工就緒的 LOD 400 BIM（結構／MEP／圖面），並可帶回既有軟體族庫。同步公開 AECBench；早期用戶已跑過大量任務，屬 AEC 垂直 agent 的高信號上線。",
-          "footer": "https://x.com/altafganihar/status/2115808566439264349"
+          "footer": "https://x.com/altafganihar/status/2115808566439264349",
+          "community": {
+            "teaser": "社群把它當成建築界的 Cursor 時刻。",
+            "voices": "原帖曝光破百萬級、百餘則引用。主軸：預算砍一刀就重做結構／MEP／圖面、方案從 3 變 300、AECBench「差不多對仍算錯」。",
+            "note": "垂直 agent 的價值在改稿與協調，不在漂亮透視圖。下一步看真實專案是否過審。"
+          }
         },
         {
           "tag": "開源",

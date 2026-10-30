@@ -194,6 +194,49 @@
     .site-footer .rss-link:hover { color: #0071e3; }
     .date-group { margin-bottom: 32px; }
     .date-label { font-weight: 600; margin-bottom: 12px; color: var(--muted); font-size: 0.875rem; }
+
+    .community {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+    .community-summary {
+      list-style: none;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      cursor: pointer;
+      color: #86868b;
+      font-size: 0.8125rem;
+    }
+    .community-summary::-webkit-details-marker { display: none; }
+    .community-label { flex: 0 0 auto; font-weight: 500; color: #6e6e73; }
+    .community-teaser {
+      flex: 1 1 auto;
+      min-width: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: #86868b;
+    }
+    .community-summary::after {
+      content: "›";
+      margin-left: auto;
+      color: #86868b;
+      transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    .community[open] .community-summary::after { transform: rotate(90deg); }
+    .community[open] .community-teaser { display: none; }
+    .community-body { margin-top: 12px; }
+    .community-voices,
+    .community-note {
+      font-size: 0.875rem;
+      line-height: 1.65;
+      color: #6e6e73;
+      margin: 0 0 10px;
+    }
+    .community-note { color: #1d1d1f; }
+    .community-note:last-child { margin-bottom: 0; }
     @media (max-width: 900px) {
       .main { padding: 40px 0 0; }
       .site-footer { margin: 48px auto 40px; }
@@ -245,6 +288,42 @@
     <a class="rss-link" href="feed.xml">訂閱 RSS</a>
   </footer>
   <script>
+
+    function communityUsable(c) {
+      if (!c || typeof c !== 'object') return false;
+      return !!(String(c.teaser || '').trim() || String(c.voices || '').trim() || String(c.note || '').trim());
+    }
+
+    function escapeHtml(s) {
+      return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function communityHtml(c) {
+      if (!communityUsable(c)) return '';
+      const teaser = String(c.teaser || '').trim()
+        || String(c.voices || '').trim()
+        || String(c.note || '').trim();
+      let body = '';
+      if (String(c.voices || '').trim()) {
+        body += `<p class="community-voices">${escapeHtml(c.voices)}</p>`;
+      }
+      if (String(c.note || '').trim()) {
+        body += `<p class="community-note">${escapeHtml(c.note)}</p>`;
+      }
+      if (!body) return '';
+      return `<details class="community">
+        <summary class="community-summary">
+          <span class="community-label">社群評論</span>
+          <span class="community-teaser">${escapeHtml(teaser)}</span>
+        </summary>
+        <div class="community-body">${body}</div>
+      </details>`;
+    }
+
     function extractUrl(footer) {
       if (!footer) return '';
       const m = String(footer).match(/https?:\/\/\S+/);
@@ -354,11 +433,13 @@
           const hRead = hLink
             ? `<div class="footer" style="margin-top:20px;justify-content:flex-end"><a href="${hLink}" target="_blank" rel="noopener noreferrer">閱讀 →</a></div>`
             : '';
+          const hCommunity = communityHtml(h.community);
           div.innerHTML = `
             <div class="meta">${h.meta || ''}</div>
             <h2>${h.title || ''}</h2>
             <p>${h.summary || ''}</p>
             ${hRead}
+            ${hCommunity}
           `;
           home.appendChild(div);
         });
@@ -380,11 +461,13 @@
             const readLink = url
               ? `<a href="${url}" target="_blank" rel="noopener noreferrer">閱讀 →</a>`
               : `<span style="color:var(--muted)">閱讀 →</span>`;
+            const itemCommunity = communityHtml(item.community);
             card.innerHTML = `
               <span class="tag">${item.tag || ''}</span>
               <h3>${item.title || ''}</h3>
               <p>${item.summary || ''}</p>
               <div class="footer">${readLink}</div>
+              ${itemCommunity}
             `;
             container.appendChild(card);
           });
