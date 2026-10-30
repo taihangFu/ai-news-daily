@@ -207,10 +207,13 @@
       gap: 8px;
       cursor: pointer;
       color: #86868b;
-      font-size: 0.8125rem;
+      font-size: 0.875rem;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: rgba(0,0,0,0.03);
     }
     .community-summary::-webkit-details-marker { display: none; }
-    .community-label { flex: 0 0 auto; font-weight: 500; color: #6e6e73; }
+    .community-label { flex: 0 0 auto; font-weight: 500; color: #1d1d1f; font-size: 0.875rem; }
     .community-teaser {
       flex: 1 1 auto;
       min-width: 0;
@@ -222,7 +225,7 @@
     .community-summary::after {
       content: "›";
       margin-left: auto;
-      color: #86868b;
+      color: #6e6e73;
       transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
     }
     .community[open] .community-summary::after { transform: rotate(90deg); }
