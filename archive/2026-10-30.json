@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "headlines": [
+    {
+      "meta": "日報 · 2026年10月30日",
+      "title": "Mistral 開源 Le Chonk 權重：約 1T MoE，主打 agentic coding 與資安",
+      "summary": "Mistral AI 正式釋出新一代 Le Chonk 開源權重：社群與官方敘事指約 1.05T 參數 MoE（每 token 約啟用 52B）、多模態、長上下文；官方稱在 Cognition FrontierCode 開源榜居首，並經 CrowdStrike、Cloudflare 等資安廠商驗證。權重已上 Hugging Face，可用 Mistral Forge 客製部署。",
+      "link": "https://x.com/MistralAI/status/2115811242556137820"
+    }
+  ],
+  "reports": [
+    {
+      "date": "2026 年 10 月 30 日 週五",
+      "items": [
+        {
+          "tag": "開源",
+          "title": "Pika H3 Flex：Day-1 開源影片模型，15 秒帶聲約 7 秒出片",
+          "summary": "Pika 推出 H3 Flex：以 MiniMax H3 後訓練的開源權重影片模型，官方稱 DesignArena t2v 開源榜第一；支援可匯出音軌、最高約 4K，並強調可在約 7 秒內產出 15 秒帶聲片段。權重上 Hugging Face，並提供 GitHub／Diffusers／ComfyUI 路徑。",
+          "footer": "https://x.com/pika_labs/status/2115860471215788262"
+        },
+        {
+          "tag": "產品",
+          "title": "Snaptrude Agent：建築設計 AI agent，從基地做到 LOD 400",
+          "summary": "Snaptrude 創辦人宣布推出 Agent：可與設計師協作，從基地方案一路做到接近施工就緒的 LOD 400 BIM（結構／MEP／圖面），並可帶回既有軟體族庫。同步公開 AECBench；早期用戶已跑過大量任務，屬 AEC 垂直 agent 的高信號上線。",
+          "footer": "https://x.com/altafganihar/status/2115808566439264349"
+        },
+        {
+          "tag": "開源",
+          "title": "GojiberryAI Sales OS：為 Grok Bot 開源的多代理外勤銷售棧",
+          "summary": "GojiberryAI 開源整套 outbound 銷售作業系統：以多個專責 agent（找訊號、ICP 篩選、 enrichment、文案、跟進、會議資格等）串 MCP，號稱可裝進 Grok Bot 當外勤團隊。適合研究「多代理銷售工作流＋MCP」範本，而非單一聊天機器人。",
+          "footer": "https://x.com/romanbuildsaas/status/2115845620388802697"
+        },
+        {
+          "tag": "開源",
+          "title": "Terse（YC）：多人／持久化 agent 基建，MIT 開源＋雲端版",
+          "summary": "Terse 以 YC 名義上線：定位修復「多人 AI／持久化 agent」基建痛點，提供 MIT 開源與雲端託管版（serverless actors／workflows）。適合做多用戶、長任務 agent 產品的團隊評估底層選項。",
+          "footer": "https://x.com/karatzas_thomas/status/2115889405642641730"
+        }
+      ]
+    }
+  ]
+}
