@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "headlines": [
+    {
+      "meta": "日報 · 2026年10月31日",
+      "title": "小米開源 Xiaomi-OCR-0：0.8B 文件理解，解析／抽取／OCR 問答一體",
+      "summary": "小米釋出開源文件理解模型 Xiaomi-OCR-0（約 0.8B），整合文件解析、關鍵資訊抽取與 OCR 向視覺問答；官方稱 Real5-OmniDocBench 95.24，並在 OmniDocBench v1.6 小於 1B 文件解析居首。權重、推論程式、Demo、MCP 服務與 Agent Skill 同步開源。",
+      "link": "https://x.com/XiaomiTech_/status/2116154468358316380"
+    }
+  ],
+  "reports": [
+    {
+      "date": "2026 年 10 月 31 日 週六",
+      "items": [
+        {
+          "tag": "產品",
+          "title": "Claude Max 更名 Ultra，Verified 帳號取消 5 小時上限",
+          "summary": "Anthropic 將 Max 5x 改為 Max（$100）、Max 20x 改為 Ultra（$200），並為多數已驗證 Ultra 訂戶移除 5 小時用量窗（週限額不變）。長 agent／Claude Code 工作流最常撞的時段上限，產品層級被鬆綁。",
+          "footer": "https://x.com/claudeai/status/2116220869479428500"
+        },
+        {
+          "tag": "開源",
+          "title": "商湯 SenseNova Loop-9B-Preview：迴圈 Transformer 以深度換參數量",
+          "summary": "SenseTime 開源 9B Looped Transformer（參數共享迴圈＋mHC），官方稱在 WorkBuddy／RaccoonPPT／AutomationBench 等任務達 27B 級表現；權重上 Hugging Face，Apache 2.0，可商用評估。",
+          "footer": "https://x.com/SenseTime_AI/status/2116151078219858346"
+        },
+        {
+          "tag": "開源",
+          "title": "Aura Autopilot：開源遊戲試玩 agent，自動找 bug",
+          "summary": "Aura 開源 Autopilot：在 Unity／Godot／Unreal 自主遊玩並回報缺陷的 self-improving agent，定位「遊戲版 Computer Use」；官方稱較 Claude Code 更準、近 2 倍快。",
+          "footer": "https://x.com/Aura_Assistant/status/2116191580063404100"
+        },
+        {
+          "tag": "開源",
+          "title": "Microsoft Mage-VL-Cowork：4B 點擊＋終端混合 computer-use",
+          "summary": "Microsoft 公開 Mage-VL-Cowork（約 4B、Apache-2.0）：同一策略在 GUI 與 bash／程式碼間切換；OSWorld-Verified 約 66%（人類約 72.4%），小模型本機 desktop agent 的高訊號樣本。",
+          "footer": "https://x.com/pratikg/status/2116215929961124106"
+        },
+        {
+          "tag": "開源",
+          "title": "Nace Drex-Max v1：本機多模態決策模型",
+          "summary": "Nace AI 開源 Drex-Max v1（約 27B）：對脈絡一次輸出最多 255 選項的校準機率，定位分類／路由／決策而非聊天；可於 Apple Silicon 本機跑，並提供雲端推論。",
+          "footer": "https://x.com/NaceAI/status/2116163656480428220"
+        }
+      ]
+    }
+  ]
+}

@@ -2,54 +2,45 @@
   "schemaVersion": 1,
   "headlines": [
     {
-      "meta": "日報 · 2026年10月30日",
-      "title": "Mistral 開源 Le Chonk 權重：約 1T MoE，主打 agentic coding 與資安",
-      "summary": "Mistral AI 正式釋出新一代 Le Chonk 開源權重：社群與官方敘事指約 1.05T 參數 MoE（每 token 約啟用 52B）、多模態、長上下文；官方稱在 Cognition FrontierCode 開源榜居首，並經 CrowdStrike、Cloudflare 等資安廠商驗證。權重已上 Hugging Face，可用 Mistral Forge 客製部署。",
-      "link": "https://x.com/MistralAI/status/2115811242556137820",
-      "community": {
-        "teaser": "開源第一的說法很熱，但授權與部署成本也被盯上。",
-        "voices": "原帖約 48 萬次曝光、5 千讚、387 則引用。討論集中：FrontierCode 開源榜第一、token 效率對照 GLM-5.3、修改版 MIT（MaaS 需另簽）、可自架與資安實測。",
-        "note": "今日主線仍是「可下載的大模型權重」。讀授權條款與硬體門檻，比追暱稱更有用。"
-      }
+      "meta": "日報 · 2026年10月31日",
+      "title": "小米開源 Xiaomi-OCR-0：0.8B 文件理解，解析／抽取／OCR 問答一體",
+      "summary": "小米釋出開源文件理解模型 Xiaomi-OCR-0（約 0.8B），整合文件解析、關鍵資訊抽取與 OCR 向視覺問答；官方稱 Real5-OmniDocBench 95.24，並在 OmniDocBench v1.6 小於 1B 文件解析居首。權重、推論程式、Demo、MCP 服務與 Agent Skill 同步開源。",
+      "link": "https://x.com/XiaomiTech_/status/2116154468358316380"
     }
   ],
   "reports": [
     {
-      "date": "2026 年 10 月 30 日 週五",
+      "date": "2026 年 10 月 31 日 週六",
       "items": [
         {
-          "tag": "開源",
-          "title": "Pika H3 Flex：Day-1 開源影片模型，15 秒帶聲約 7 秒出片",
-          "summary": "Pika 推出 H3 Flex：以 MiniMax H3 後訓練的開源權重影片模型，官方稱 DesignArena t2v 開源榜第一；支援可匯出音軌、最高約 4K，並強調可在約 7 秒內產出 15 秒帶聲片段。權重上 Hugging Face，並提供 GitHub／Diffusers／ComfyUI 路徑。",
-          "footer": "https://x.com/pika_labs/status/2115860471215788262",
-          "community": {
-            "teaser": "創作者搶測速度與音軌；開源榜第一成主敘事。",
-            "voices": "原帖約 30 萬次曝光、146 則引用。側重視覺／音訊測試、DesignArena 開源 t2v 榜、與 H3Max／Seedance 比速、ComfyUI／LoRA 本地路徑。",
-            "note": "開源影片權重若真能「快迭代＋分軌」，創作管線會變。先看本地算力與授權，再談榜單。"
-          }
-        },
-        {
           "tag": "產品",
-          "title": "Snaptrude Agent：建築設計 AI agent，從基地做到 LOD 400",
-          "summary": "Snaptrude 創辦人宣布推出 Agent：可與設計師協作，從基地方案一路做到接近施工就緒的 LOD 400 BIM（結構／MEP／圖面），並可帶回既有軟體族庫。同步公開 AECBench；早期用戶已跑過大量任務，屬 AEC 垂直 agent 的高信號上線。",
-          "footer": "https://x.com/altafganihar/status/2115808566439264349",
-          "community": {
-            "teaser": "社群把它當成建築界的 Cursor 時刻。",
-            "voices": "原帖曝光破百萬級、百餘則引用。主軸：預算砍一刀就重做結構／MEP／圖面、方案從 3 變 300、AECBench「差不多對仍算錯」。",
-            "note": "垂直 agent 的價值在改稿與協調，不在漂亮透視圖。下一步看真實專案是否過審。"
-          }
+          "title": "Claude Max 更名 Ultra，Verified 帳號取消 5 小時上限",
+          "summary": "Anthropic 將 Max 5x 改為 Max（$100）、Max 20x 改為 Ultra（$200），並為多數已驗證 Ultra 訂戶移除 5 小時用量窗（週限額不變）。長 agent／Claude Code 工作流最常撞的時段上限，產品層級被鬆綁。",
+          "footer": "https://x.com/claudeai/status/2116220869479428500"
         },
         {
           "tag": "開源",
-          "title": "GojiberryAI Sales OS：為 Grok Bot 開源的多代理外勤銷售棧",
-          "summary": "GojiberryAI 開源整套 outbound 銷售作業系統：以多個專責 agent（找訊號、ICP 篩選、 enrichment、文案、跟進、會議資格等）串 MCP，號稱可裝進 Grok Bot 當外勤團隊。適合研究「多代理銷售工作流＋MCP」範本，而非單一聊天機器人。",
-          "footer": "https://x.com/romanbuildsaas/status/2115845620388802697"
+          "title": "商湯 SenseNova Loop-9B-Preview：迴圈 Transformer 以深度換參數量",
+          "summary": "SenseTime 開源 9B Looped Transformer（參數共享迴圈＋mHC），官方稱在 WorkBuddy／RaccoonPPT／AutomationBench 等任務達 27B 級表現；權重上 Hugging Face，Apache 2.0，可商用評估。",
+          "footer": "https://x.com/SenseTime_AI/status/2116151078219858346"
         },
         {
           "tag": "開源",
-          "title": "Terse（YC）：多人／持久化 agent 基建，MIT 開源＋雲端版",
-          "summary": "Terse 以 YC 名義上線：定位修復「多人 AI／持久化 agent」基建痛點，提供 MIT 開源與雲端託管版（serverless actors／workflows）。適合做多用戶、長任務 agent 產品的團隊評估底層選項。",
-          "footer": "https://x.com/karatzas_thomas/status/2115889405642641730"
+          "title": "Aura Autopilot：開源遊戲試玩 agent，自動找 bug",
+          "summary": "Aura 開源 Autopilot：在 Unity／Godot／Unreal 自主遊玩並回報缺陷的 self-improving agent，定位「遊戲版 Computer Use」；官方稱較 Claude Code 更準、近 2 倍快。",
+          "footer": "https://x.com/Aura_Assistant/status/2116191580063404100"
+        },
+        {
+          "tag": "開源",
+          "title": "Microsoft Mage-VL-Cowork：4B 點擊＋終端混合 computer-use",
+          "summary": "Microsoft 公開 Mage-VL-Cowork（約 4B、Apache-2.0）：同一策略在 GUI 與 bash／程式碼間切換；OSWorld-Verified 約 66%（人類約 72.4%），小模型本機 desktop agent 的高訊號樣本。",
+          "footer": "https://x.com/pratikg/status/2116215929961124106"
+        },
+        {
+          "tag": "開源",
+          "title": "Nace Drex-Max v1：本機多模態決策模型",
+          "summary": "Nace AI 開源 Drex-Max v1（約 27B）：對脈絡一次輸出最多 255 選項的校準機率，定位分類／路由／決策而非聊天；可於 Apple Silicon 本機跑，並提供雲端推論。",
+          "footer": "https://x.com/NaceAI/status/2116163656480428220"
         }
       ]
     }

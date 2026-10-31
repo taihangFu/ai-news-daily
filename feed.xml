@@ -5,41 +5,48 @@
 <link>https://taihangfu.github.io/ai-news-daily/</link>
 <description>每日來自 X 的 AI 新工具與產品簡報</description>
 <language>zh-Hant</language>
-<lastBuildDate>Fri, 30 Oct 2026 09:00:00 +0800</lastBuildDate>
+<lastBuildDate>Sat, 31 Oct 2026 09:00:00 +0800</lastBuildDate>
 <item>
-<title>Mistral 開源 Le Chonk 權重：約 1T MoE，主打 agentic coding 與資安</title>
-<link>https://x.com/MistralAI/status/2115811242556137820</link>
-<guid isPermaLink="true">https://x.com/MistralAI/status/2115811242556137820</guid>
-<description>Mistral AI 正式釋出新一代 Le Chonk 開源權重：社群與官方敘事指約 1.05T 參數 MoE（每 token 約啟用 52B）、多模態、長上下文；官方稱在 Cognition FrontierCode 開源榜居首，並經 CrowdStrike、Cloudflare 等資安廠商驗證。權重已上 Hugging Face，可用 Mistral Forge 客製部署。</description>
-<pubDate>Fri, 30 Oct 2026 09:00:00 +0800</pubDate>
+<title>小米開源 Xiaomi-OCR-0：0.8B 文件理解，解析／抽取／OCR 問答一體</title>
+<link>https://x.com/XiaomiTech_/status/2116154468358316380</link>
+<guid isPermaLink="true">https://x.com/XiaomiTech_/status/2116154468358316380</guid>
+<description>小米釋出開源文件理解模型 Xiaomi-OCR-0（約 0.8B），整合文件解析、關鍵資訊抽取與 OCR 向視覺問答；官方稱 Real5-OmniDocBench 95.24，並在 OmniDocBench v1.6 小於 1B 文件解析居首。權重、推論程式、Demo、MCP 服務與 Agent Skill 同步開源。</description>
+<pubDate>Sat, 31 Oct 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>Pika H3 Flex：Day-1 開源影片模型，15 秒帶聲約 7 秒出片</title>
-<link>https://x.com/pika_labs/status/2115860471215788262</link>
-<guid isPermaLink="true">https://x.com/pika_labs/status/2115860471215788262</guid>
-<description>Pika 推出 H3 Flex：以 MiniMax H3 後訓練的開源權重影片模型，官方稱 DesignArena t2v 開源榜第一；支援可匯出音軌、最高約 4K，並強調可在約 7 秒內產出 15 秒帶聲片段。權重上 Hugging Face，並提供 GitHub／Diffusers／ComfyUI 路徑。</description>
-<pubDate>Fri, 30 Oct 2026 09:00:00 +0800</pubDate>
+<title>Claude Max 更名 Ultra，Verified 帳號取消 5 小時上限</title>
+<link>https://x.com/claudeai/status/2116220869479428500</link>
+<guid isPermaLink="true">https://x.com/claudeai/status/2116220869479428500</guid>
+<description>Anthropic 將 Max 5x 改為 Max（$100）、Max 20x 改為 Ultra（$200），並為多數已驗證 Ultra 訂戶移除 5 小時用量窗（週限額不變）。長 agent／Claude Code 工作流最常撞的時段上限，產品層級被鬆綁。</description>
+<pubDate>Sat, 31 Oct 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>Snaptrude Agent：建築設計 AI agent，從基地做到 LOD 400</title>
-<link>https://x.com/altafganihar/status/2115808566439264349</link>
-<guid isPermaLink="true">https://x.com/altafganihar/status/2115808566439264349</guid>
-<description>Snaptrude 創辦人宣布推出 Agent：可與設計師協作，從基地方案一路做到接近施工就緒的 LOD 400 BIM（結構／MEP／圖面），並可帶回既有軟體族庫。同步公開 AECBench；早期用戶已跑過大量任務，屬 AEC 垂直 agent 的高信號上線。</description>
-<pubDate>Fri, 30 Oct 2026 09:00:00 +0800</pubDate>
+<title>商湯 SenseNova Loop-9B-Preview：迴圈 Transformer 以深度換參數量</title>
+<link>https://x.com/SenseTime_AI/status/2116151078219858346</link>
+<guid isPermaLink="true">https://x.com/SenseTime_AI/status/2116151078219858346</guid>
+<description>SenseTime 開源 9B Looped Transformer（參數共享迴圈＋mHC），官方稱在 WorkBuddy／RaccoonPPT／AutomationBench 等任務達 27B 級表現；權重上 Hugging Face，Apache 2.0，可商用評估。</description>
+<pubDate>Sat, 31 Oct 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>GojiberryAI Sales OS：為 Grok Bot 開源的多代理外勤銷售棧</title>
-<link>https://x.com/romanbuildsaas/status/2115845620388802697</link>
-<guid isPermaLink="true">https://x.com/romanbuildsaas/status/2115845620388802697</guid>
-<description>GojiberryAI 開源整套 outbound 銷售作業系統：以多個專責 agent（找訊號、ICP 篩選、 enrichment、文案、跟進、會議資格等）串 MCP，號稱可裝進 Grok Bot 當外勤團隊。適合研究「多代理銷售工作流＋MCP」範本，而非單一聊天機器人。</description>
-<pubDate>Fri, 30 Oct 2026 09:00:00 +0800</pubDate>
+<title>Aura Autopilot：開源遊戲試玩 agent，自動找 bug</title>
+<link>https://x.com/Aura_Assistant/status/2116191580063404100</link>
+<guid isPermaLink="true">https://x.com/Aura_Assistant/status/2116191580063404100</guid>
+<description>Aura 開源 Autopilot：在 Unity／Godot／Unreal 自主遊玩並回報缺陷的 self-improving agent，定位「遊戲版 Computer Use」；官方稱較 Claude Code 更準、近 2 倍快。</description>
+<pubDate>Sat, 31 Oct 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>Terse（YC）：多人／持久化 agent 基建，MIT 開源＋雲端版</title>
-<link>https://x.com/karatzas_thomas/status/2115889405642641730</link>
-<guid isPermaLink="true">https://x.com/karatzas_thomas/status/2115889405642641730</guid>
-<description>Terse 以 YC 名義上線：定位修復「多人 AI／持久化 agent」基建痛點，提供 MIT 開源與雲端託管版（serverless actors／workflows）。適合做多用戶、長任務 agent 產品的團隊評估底層選項。</description>
-<pubDate>Fri, 30 Oct 2026 09:00:00 +0800</pubDate>
+<title>Microsoft Mage-VL-Cowork：4B 點擊＋終端混合 computer-use</title>
+<link>https://x.com/pratikg/status/2116215929961124106</link>
+<guid isPermaLink="true">https://x.com/pratikg/status/2116215929961124106</guid>
+<description>Microsoft 公開 Mage-VL-Cowork（約 4B、Apache-2.0）：同一策略在 GUI 與 bash／程式碼間切換；OSWorld-Verified 約 66%（人類約 72.4%），小模型本機 desktop agent 的高訊號樣本。</description>
+<pubDate>Sat, 31 Oct 2026 09:00:00 +0800</pubDate>
+</item>
+<item>
+<title>Nace Drex-Max v1：本機多模態決策模型</title>
+<link>https://x.com/NaceAI/status/2116163656480428220</link>
+<guid isPermaLink="true">https://x.com/NaceAI/status/2116163656480428220</guid>
+<description>Nace AI 開源 Drex-Max v1（約 27B）：對脈絡一次輸出最多 255 選項的校準機率，定位分類／路由／決策而非聊天；可於 Apple Silicon 本機跑，並提供雲端推論。</description>
+<pubDate>Sat, 31 Oct 2026 09:00:00 +0800</pubDate>
 </item>
 </channel>
 </rss>
