@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "headlines": [
+    {
+      "meta": "日報 · 2026年11月1日",
+      "title": "OpenCode Hex 穩定版：本機語音輸入，對任何 coding agent 說話即可",
+      "summary": "OpenCode 推出 Hex 穩定版：按住快捷鍵說話、鬆開即貼到游標處；語音辨識本機執行，支援 macOS／Windows／Linux。定位給任意 coding agent 的私密口語輸入，並已獲 DHH 納入 Omarchy 聽寫選項。",
+      "link": "https://x.com/opencode/status/2116555630236577819",
+      "community": {
+        "teaser": "本機聽寫熱度高；多人拿它對標 Wispr Flow。",
+        "voices": "原帖約 39 萬次曝光、5.3 千讚、142 則引用。討論集中：全本地、跨平台、對 agent 口語下指令成癮、DHH／Omarchy 接入、早期 bug 修復速度快。",
+        "note": "語音輸入的決勝點是隱私與延遲。本機穩定版若真穩，會改寫人跟 coding agent 的互動節奏。"
+      }
+    }
+  ],
+  "reports": [
+    {
+      "date": "2026 年 11 月 1 日 週日",
+      "items": [
+        {
+          "tag": "開源",
+          "title": "agent-desktop：給任意 coding agent 的跨平台桌面 Computer Use",
+          "summary": "Vercel Labs／Chris Tate 開源 agent-desktop：讓任意 coding agent 操作桌面 App（整機 Computer Use，非截圖猜像素），可背景執行、多 agent 平行各有游標；支援 macOS／Windows／Linux，Apache-2.0。",
+          "footer": "https://x.com/ctatedev/status/2116323148706771302",
+          "community": {
+            "teaser": "桌面 Computer Use 落地；信任與權限成焦點。",
+            "voices": "原帖約 53 萬次曝光、7.2 千讚、278 則引用。主軸：整機桌面操控比純瀏覽器 agent 更遠、多游標平行 demo、權限範圍／審計／可撤銷、有人一次推到 16 個 agent。",
+            "note": "能力已經到整台電腦；真正產品是「敢不敢交給它」。先測無聊任務，再碰帳密與金流。"
+          }
+        },
+        {
+          "tag": "開源",
+          "title": "Google Elephant-Goldfish Model：先打穿規格，再准寫碼",
+          "summary": "Google 開源 Elephant-Goldfish Model（EGM，Apache 2.0）：長程「大象」只做規格與記憶、禁止寫碼；零上下文「金魚」敵對審稿通過後才實作。目前主要支援 Antigravity，並標註非 Google 官方支援產品。",
+          "footer": "https://x.com/thisguyknowsai/status/2116453452977152209",
+          "community": {
+            "teaser": "「別讓模型改自己的作業」成可安裝技能。",
+            "voices": "高互動解讀帖約 16 萬次曝光、2.3 千讚。討論環繞：規格先於程式、新鮮 session 覆述／敵對審、與 Spec Kit／Cursor plan 對照、目前綁 Antigravity。",
+            "note": "開源價值在工作流，不在模型分數。先看你能不能把設計文件寫到金魚聽得懂。"
+          }
+        },
+        {
+          "tag": "產品",
+          "title": "Antigravity 正式進入 Android Studio",
+          "summary": "Google Antigravity 宣布可在 Android Studio 使用其 agent 能力（Bring Your Own Agent），並可銜接最新 Gemini 模型與 Antigravity 新功能；Android Studio 官方同步轉發。",
+          "footer": "https://x.com/antigravity/status/2116232874328281451"
+        },
+        {
+          "tag": "產品",
+          "title": "Perplexity Computer：直接操控你自己的 Chrome",
+          "summary": "Perplexity CEO 宣布 Computer（Mac／Windows）可透過 Chrome 擴充套件操作本機瀏覽器，在使用者已登入的網站上執行本機瀏覽任務；Comet 使用者無需另裝。",
+          "footer": "https://x.com/AravSrinivas/status/2116186492758577575"
+        }
+      ]
+    }
+  ]
+}
