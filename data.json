@@ -2,54 +2,48 @@
   "schemaVersion": 1,
   "headlines": [
     {
-      "meta": "日報 · 2026年11月1日",
-      "title": "OpenCode Hex 穩定版：本機語音輸入，對任何 coding agent 說話即可",
-      "summary": "OpenCode 推出 Hex 穩定版：按住快捷鍵說話、鬆開即貼到游標處；語音辨識本機執行，支援 macOS／Windows／Linux。定位給任意 coding agent 的私密口語輸入，並已獲 DHH 納入 Omarchy 聽寫選項。",
-      "link": "https://x.com/opencode/status/2116555630236577819",
+      "meta": "日報 · 2026年11月2日",
+      "title": "DeepSeek Super-agent：常駐 Router + 平行 Worker，開源主動編碼原型",
+      "summary": "DeepSeek Harness 團隊發表架構長文並開源 MIT 研究原型 dsh-superagent-prototype：長駐 Router 對人對話與派活，隔離 Worker 平行執行；監聽單一 GitHub 倉庫（可選飛書），目標是盡量少佔人類注意力。官方消融稱 p95 完成時間約 29.5→15.7 分；README 標註非正式產品。",
+      "link": "https://x.com/DeepSeekHarness/status/2116857257245987236",
       "community": {
-        "teaser": "本機聽寫熱度高；多人拿它對標 Wispr Flow。",
-        "voices": "原帖約 39 萬次曝光、5.3 千讚、142 則引用。討論集中：全本地、跨平台、對 agent 口語下指令成癮、DHH／Omarchy 接入、早期 bug 修復速度快。",
-        "note": "語音輸入的決勝點是隱私與延遲。本機穩定版若真穩，會改寫人跟 coding agent 的互動節奏。"
+        "teaser": "開源的不是更大模型，而是「誰來管 Session」這層系統。",
+        "voices": "官方帖約 206 萬次曝光、1.1 萬讚、665 則引用、388 則回覆、約 1.4 萬收藏。kimmonismus 轉述約 1.8 千讚；MinLiBuilds 中文拆解約 2.1 千讚；omarsar0 稱 harness 教科書約 990 讚；Cointelegraph／Polymarket 二次放大。主軸：Router＋Worker、注意力瓶頸、權限表、研究原型 vs 產品。",
+        "note": "Agent 競賽正從模型智商轉向編排與注意力經濟。先當架構藍圖讀；真上線前把授權、撤銷與 Watchdog 想清楚。"
       }
     }
   ],
   "reports": [
     {
-      "date": "2026 年 11 月 1 日 週日",
+      "date": "2026 年 11 月 2 日 週一",
       "items": [
         {
-          "tag": "開源",
-          "title": "agent-desktop：給任意 coding agent 的跨平台桌面 Computer Use",
-          "summary": "Vercel Labs／Chris Tate 開源 agent-desktop：讓任意 coding agent 操作桌面 App（整機 Computer Use，非截圖猜像素），可背景執行、多 agent 平行各有游標；支援 macOS／Windows／Linux，Apache-2.0。",
-          "footer": "https://x.com/ctatedev/status/2116323148706771302",
+          "tag": "產品",
+          "title": "SemiAnalysis GDPx：高價值真實工作 Agent 基準，最強僅約 12%",
+          "summary": "SemiAnalysis 發布 GDPx：206 題、11 個高 ROI 領域（晶片、資安、生物、金融、法律等），任務最長約 8 小時。榜首 Claude Opus 5.5 約 12.0%，Gemini 4 Carbon 約 10.9%，GPT-6 Astra 約 9.6%。把評測拉回真實經濟工作與單題成本。",
+          "footer": "https://x.com/SemiAnalysis_/status/2117075900575477855",
           "community": {
-            "teaser": "桌面 Computer Use 落地；信任與權限成焦點。",
-            "voices": "原帖約 53 萬次曝光、7.2 千讚、278 則引用。主軸：整機桌面操控比純瀏覽器 agent 更遠、多游標平行 demo、權限範圍／審計／可撤銷、有人一次推到 16 個 agent。",
-            "note": "能力已經到整台電腦；真正產品是「敢不敢交給它」。先測無聊任務，再碰帳密與金流。"
-          }
-        },
-        {
-          "tag": "開源",
-          "title": "Google Elephant-Goldfish Model：先打穿規格，再准寫碼",
-          "summary": "Google 開源 Elephant-Goldfish Model（EGM，Apache 2.0）：長程「大象」只做規格與記憶、禁止寫碼；零上下文「金魚」敵對審稿通過後才實作。目前主要支援 Antigravity，並標註非 Google 官方支援產品。",
-          "footer": "https://x.com/thisguyknowsai/status/2116453452977152209",
-          "community": {
-            "teaser": "「別讓模型改自己的作業」成可安裝技能。",
-            "voices": "高互動解讀帖約 16 萬次曝光、2.3 千讚。討論環繞：規格先於程式、新鮮 session 覆述／敵對審、與 Spec Kit／Cursor plan 對照、目前綁 Antigravity。",
-            "note": "開源價值在工作流，不在模型分數。先看你能不能把設計文件寫到金魚聽得懂。"
+            "teaser": "通關榜幾乎滿分；真幹活只剩一成二。",
+            "voices": "原帖約 92 萬次曝光、2.2 千讚、263 則引用。Sundar Pichai 轉發約 2.7 千讚，點名 Carbon 成本線；Dylan Patel 公開向 Google／Carbon 致歉約 1.2 千讚。辯論：領域深度 vs 通用分數、安全分類器代價、單題成本。",
+            "note": "選模型該看「能扛多久的真活」與單題帳單，而不是再刷一個接近滿分的通關榜。"
           }
         },
         {
           "tag": "產品",
-          "title": "Antigravity 正式進入 Android Studio",
-          "summary": "Google Antigravity 宣布可在 Android Studio 使用其 agent 能力（Bring Your Own Agent），並可銜接最新 Gemini 模型與 Antigravity 新功能；Android Studio 官方同步轉發。",
-          "footer": "https://x.com/antigravity/status/2116232874328281451"
+          "title": "Patrick Collison「Liquid software」：Improvements 框讓 Agent 直接改應用",
+          "summary": "Stripe CEO 在個人 vibe-coded 應用加入自由文字 improvements 輸入，接到會 YOLO 實作的 agent：提需求後背景實作、測試、部署。有人幾天內提交約 150 項改進；他稱為 liquid software，並自問可維護性、協作與安全如何擴展。",
+          "footer": "https://x.com/patrickc/status/2116636967517798672",
+          "community": {
+            "teaser": "軟體不再出貨，而是持續被改寫。",
+            "voices": "原帖約 41 萬次曝光、4.3 千讚、239 則引用、428 則回覆。討論環繞：啟用能量降到接近零、第 151 次改進會否弄壞第 37 次、測試護欄、多人協作與安全。omarsar0 等跟進「可塑個人軟體」敘事。",
+            "note": "產品面已從「給功能」變成「給改寫權」。沒有回歸測試與權限邊界，液態很快變泥漿。"
+          }
         },
         {
-          "tag": "產品",
-          "title": "Perplexity Computer：直接操控你自己的 Chrome",
-          "summary": "Perplexity CEO 宣布 Computer（Mac／Windows）可透過 Chrome 擴充套件操作本機瀏覽器，在使用者已登入的網站上執行本機瀏覽任務；Comet 使用者無需另裝。",
-          "footer": "https://x.com/AravSrinivas/status/2116186492758577575"
+          "tag": "模型",
+          "title": "美團 LongCat-2.5：1.6T MoE 原生多模態，主打長程智能體",
+          "summary": "美團龍貓發布 LongCat-2.5 正式版：總參數約 1.6 萬億、每 token 激活約 480 億，強化原生視覺理解與智能體編程，定位長程 agent 任務；計劃經 GitHub／Hugging Face 開源權重，API 已可體驗。X 一級轉發偏少，榜單宣稱待官方與權重上線後核對。",
+          "footer": "https://x.com/xiax0603/status/2117111177591562354"
         }
       ]
     }

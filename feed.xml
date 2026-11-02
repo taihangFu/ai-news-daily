@@ -5,41 +5,34 @@
 <link>https://taihangfu.github.io/ai-news-daily/</link>
 <description>每日來自 X 的 AI 新工具與產品簡報</description>
 <language>zh-Hant</language>
-<lastBuildDate>Sun, 01 Nov 2026 09:00:00 +0800</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 19:40:00 +0800</lastBuildDate>
 <item>
-<title>OpenCode Hex 穩定版：本機語音輸入，對任何 coding agent 說話即可</title>
-<link>https://x.com/opencode/status/2116555630236577819</link>
-<guid isPermaLink="true">https://x.com/opencode/status/2116555630236577819</guid>
-<description>OpenCode 推出 Hex 穩定版：按住快捷鍵說話、鬆開即貼到游標處；語音辨識本機執行，支援 macOS／Windows／Linux。定位給任意 coding agent 的私密口語輸入，並已獲 DHH 納入 Omarchy 聽寫選項。</description>
-<pubDate>Sun, 01 Nov 2026 09:00:00 +0800</pubDate>
+<title>DeepSeek Super-agent：常駐 Router + 平行 Worker，開源主動編碼原型</title>
+<link>https://x.com/DeepSeekHarness/status/2116857257245987236</link>
+<guid isPermaLink="true">https://x.com/DeepSeekHarness/status/2116857257245987236</guid>
+<description>DeepSeek Harness 團隊發表架構長文並開源 MIT 研究原型 dsh-superagent-prototype：長駐 Router 對人對話與派活，隔離 Worker 平行執行；監聽單一 GitHub 倉庫（可選飛書），目標是盡量少佔人類注意力。官方消融稱 p95 完成時間約 29.5→15.7 分；README 標註非正式產品。</description>
+<pubDate>Mon, 02 Nov 2026 19:40:00 +0800</pubDate>
 </item>
 <item>
-<title>agent-desktop：給任意 coding agent 的跨平台桌面 Computer Use</title>
-<link>https://x.com/ctatedev/status/2116323148706771302</link>
-<guid isPermaLink="true">https://x.com/ctatedev/status/2116323148706771302</guid>
-<description>Vercel Labs／Chris Tate 開源 agent-desktop：讓任意 coding agent 操作桌面 App（整機 Computer Use，非截圖猜像素），可背景執行、多 agent 平行各有游標；支援 macOS／Windows／Linux，Apache-2.0。</description>
-<pubDate>Sun, 01 Nov 2026 09:00:00 +0800</pubDate>
+<title>SemiAnalysis GDPx：高價值真實工作 Agent 基準，最強僅約 12%</title>
+<link>https://x.com/SemiAnalysis_/status/2117075900575477855</link>
+<guid isPermaLink="true">https://x.com/SemiAnalysis_/status/2117075900575477855</guid>
+<description>SemiAnalysis 發布 GDPx：206 題、11 個高 ROI 領域（晶片、資安、生物、金融、法律等），任務最長約 8 小時。榜首 Claude Opus 5.5 約 12.0%，Gemini 4 Carbon 約 10.9%，GPT-6 Astra 約 9.6%。把評測拉回真實經濟工作與單題成本。</description>
+<pubDate>Mon, 02 Nov 2026 19:40:00 +0800</pubDate>
 </item>
 <item>
-<title>Google Elephant-Goldfish Model：先打穿規格，再准寫碼</title>
-<link>https://x.com/thisguyknowsai/status/2116453452977152209</link>
-<guid isPermaLink="true">https://x.com/thisguyknowsai/status/2116453452977152209</guid>
-<description>Google 開源 Elephant-Goldfish Model（EGM，Apache 2.0）：長程「大象」只做規格與記憶、禁止寫碼；零上下文「金魚」敵對審稿通過後才實作。目前主要支援 Antigravity，並標註非 Google 官方支援產品。</description>
-<pubDate>Sun, 01 Nov 2026 09:00:00 +0800</pubDate>
+<title>Patrick Collison「Liquid software」：Improvements 框讓 Agent 直接改應用</title>
+<link>https://x.com/patrickc/status/2116636967517798672</link>
+<guid isPermaLink="true">https://x.com/patrickc/status/2116636967517798672</guid>
+<description>Stripe CEO 在個人 vibe-coded 應用加入自由文字 improvements 輸入，接到會 YOLO 實作的 agent：提需求後背景實作、測試、部署。有人幾天內提交約 150 項改進；他稱為 liquid software，並自問可維護性、協作與安全如何擴展。</description>
+<pubDate>Mon, 02 Nov 2026 19:40:00 +0800</pubDate>
 </item>
 <item>
-<title>Antigravity 正式進入 Android Studio</title>
-<link>https://x.com/antigravity/status/2116232874328281451</link>
-<guid isPermaLink="true">https://x.com/antigravity/status/2116232874328281451</guid>
-<description>Google Antigravity 宣布可在 Android Studio 使用其 agent 能力（Bring Your Own Agent），並可銜接最新 Gemini 模型與 Antigravity 新功能；Android Studio 官方同步轉發。</description>
-<pubDate>Sun, 01 Nov 2026 09:00:00 +0800</pubDate>
-</item>
-<item>
-<title>Perplexity Computer：直接操控你自己的 Chrome</title>
-<link>https://x.com/AravSrinivas/status/2116186492758577575</link>
-<guid isPermaLink="true">https://x.com/AravSrinivas/status/2116186492758577575</guid>
-<description>Perplexity CEO 宣布 Computer（Mac／Windows）可透過 Chrome 擴充套件操作本機瀏覽器，在使用者已登入的網站上執行本機瀏覽任務；Comet 使用者無需另裝。</description>
-<pubDate>Sun, 01 Nov 2026 09:00:00 +0800</pubDate>
+<title>美團 LongCat-2.5：1.6T MoE 原生多模態，主打長程智能體</title>
+<link>https://x.com/xiax0603/status/2117111177591562354</link>
+<guid isPermaLink="true">https://x.com/xiax0603/status/2117111177591562354</guid>
+<description>美團龍貓發布 LongCat-2.5 正式版：總參數約 1.6 萬億、每 token 激活約 480 億，強化原生視覺理解與智能體編程，定位長程 agent 任務；計劃經 GitHub／Hugging Face 開源權重，API 已可體驗。X 一級轉發偏少，榜單宣稱待官方與權重上線後核對。</description>
+<pubDate>Mon, 02 Nov 2026 19:40:00 +0800</pubDate>
 </item>
 </channel>
 </rss>
