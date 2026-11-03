@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "headlines": [
+    {
+      "meta": "日報 · 2026年11月3日",
+      "title": "Deep Principle Hydrogen-1.0：開源權重科學模型，自報科研基準超 GPT-6 Astra",
+      "summary": "杭州 Deep Principle 發布 Hydrogen-1.0：在 GLM-5.3 上以後訓練吃入實驗室完整記錄與發現軌跡（含失敗），並公開模型權重；自報 FrontierScience-Research 38.3%（對比 GPT-6 Astra 33.3%）、GPQA-Diamond 93.0%。權重開放給研究者檢查與改寫；基準為公司自測，待獨立複現。",
+      "link": "https://x.com/chenru_duan/status/2117249292469665838",
+      "community": {
+        "teaser": "開源的不是更大聊天模型，而是願意公開實驗室失敗軌跡的科研權重。",
+        "voices": "創辦人帖約 62 萬次曝光、3.4 千讚、275 轉發、51 則引用、約 1.4 千收藏。Z.ai／GLM 側 Zixuan Li 轉發約 570 讚；elvis（omarsar0）稱終於有強開源科學模型；MTSlive 等二次放大「開源打贏 Astra」敘事。主軸：實驗室筆記本後訓練、自報基準可信度、MIT／HF 權重、科學專精 vs 通用前沿。",
+        "note": "AI for Science 正從刷論文理解，轉向「能不能規劃、改錯、重跑實驗」。先下載權重在自家任務上複現，再決定信不信那張對照表。"
+      }
+    }
+  ],
+  "reports": [
+    {
+      "date": "2026 年 11 月 3 日 週二",
+      "items": [
+        {
+          "tag": "工具",
+          "title": "Anthropic Message Threads：Messages API 公開 Beta，長 Agent 少傳歷史",
+          "summary": "ClaudeDevs 宣布 Message Threads 進入公開 Beta：伺服器緩存對話，後續回合只送新訊息與上一則 message ID。官方稱 50 萬–100 萬 token 請求中位首字延遲約降 35%；多數 Claude Code 已預設開啟。模型仍讀完整上下文，不省 token／費用；執行緒閒置約 5 分鐘過期。",
+          "footer": "https://x.com/ClaudeDevs/status/2117332449382510884",
+          "community": {
+            "teaser": "變快了，但帳單沒變小。",
+            "voices": "官方帖約 36 萬次曝光、5.2 千讚、181 轉發、133 則引用。開發者拆解：請求體可從約 800KB 縮到約 1.8KB；同時強調定價與用量不變、閒置過期需 fail-closed。主軸：TTFT／頻寬 vs 成本、Claude Code 預設、長 agent 迴圈實務。",
+            "note": "把執行緒當快取，別當長期記憶。過期就重建，別假設伺服器永遠記得你的 agent。"
+          }
+        },
+        {
+          "tag": "產品",
+          "title": "OpenAI Dots：擴充 Astra／Terra 等多模型，瞄準更廣用戶",
+          "summary": "OpenAI Dots 負責人 Tibo 宣布正擴充驅動 Dots 的前沿模型家族，含 GPT-6 Astra、GPT-6.1 Terra 與後續型號；Terra 主打速度與個性，並稱有助把 Dots 帶給更多人。屬進行中擴充／路線圖，尚無明確上線日。",
+          "footer": "https://x.com/thsottiaux/status/2117283124833055196",
+          "community": {
+            "teaser": "破百萬曝光的「Dots 要來了」——但還沒說哪天。",
+            "voices": "原帖約 106 萬次曝光、9.3 千讚、264 轉發、328 則引用、約 1.6 千回覆。解讀分裂：Plus 用戶樂觀解讀為開放前奏；另有「Terra＝降配」、與 Grok Bot 搶常駐 agent 的焦慮。主軸：多模型自動路由、速度／成本／個性、訂閱分級。",
+            "note": "今天買的是敘事與期待，不是可下載的新產品。等正式開放與預設模型表再下結論。"
+          }
+        },
+        {
+          "tag": "工具",
+          "title": "OpenAI Pando：自建 Git 後端，Agent 洪峰下 push 延遲約降八成",
+          "summary": "OpenAI Developers 公開 Pando——為 monorepo 打造的新 Git 後端，不改工程師與 agent 的 Git 用法；官方稱 push 延遲約降 80%，日處理近 1 PB Git 資料，並回饋部分修補給上游 Git。",
+          "footer": "https://x.com/OpenAIDevs/status/2117408792346509663",
+          "community": {
+            "teaser": "模型戰爭之後，輪到 monorepo 跟不上 agent。",
+            "voices": "官方帖約 16 萬次曝光、1.7 千讚、118 轉發、80 則引用。討論點：agent 產量把 Git 推爆、分支並行、packfile 複用；Tibo 轉發致謝。主軸：基礎設施瓶頸從模型／harness 移到版本控制。",
+            "note": "當 coding agent 比 merge 還快，下一場競賽是 repo 基建。這篇是 OpenAI 的內部解法展示，不是對外 SaaS 上架。"
+          }
+        },
+        {
+          "tag": "產品",
+          "title": "Workers IO：確定性 hypervisor 對整系統打數百萬故障模擬",
+          "summary": "YC 創辦人 Chaitanya 發布 Workers IO：在確定性 hypervisor 內對整套系統（含依賴）注入網路延遲、磁碟錯誤、時鐘偏移、行程崩潰等，跑數百萬生產情境模擬並可完美重現失敗，瞄準 agent 加速寫碼後的驗證瓶頸。",
+          "footer": "https://x.com/chaaai/status/2117331381206516115"
+        }
+      ]
+    }
+  ]
+}

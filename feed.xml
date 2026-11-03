@@ -5,34 +5,41 @@
 <link>https://taihangfu.github.io/ai-news-daily/</link>
 <description>每日來自 X 的 AI 新工具與產品簡報</description>
 <language>zh-Hant</language>
-<lastBuildDate>Mon, 02 Nov 2026 19:40:00 +0800</lastBuildDate>
+<lastBuildDate>Tue, 03 Nov 2026 09:00:00 +0800</lastBuildDate>
 <item>
-<title>DeepSeek Super-agent：常駐 Router + 平行 Worker，開源主動編碼原型</title>
-<link>https://x.com/DeepSeekHarness/status/2116857257245987236</link>
-<guid isPermaLink="true">https://x.com/DeepSeekHarness/status/2116857257245987236</guid>
-<description>DeepSeek Harness 團隊發表架構長文並開源 MIT 研究原型 dsh-superagent-prototype：長駐 Router 對人對話與派活，隔離 Worker 平行執行；監聽單一 GitHub 倉庫（可選飛書），目標是盡量少佔人類注意力。官方消融稱 p95 完成時間約 29.5→15.7 分；README 標註非正式產品。</description>
-<pubDate>Mon, 02 Nov 2026 19:40:00 +0800</pubDate>
+<title>Deep Principle Hydrogen-1.0：開源權重科學模型，自報科研基準超 GPT-6 Astra</title>
+<link>https://x.com/chenru_duan/status/2117249292469665838</link>
+<guid isPermaLink="true">https://x.com/chenru_duan/status/2117249292469665838</guid>
+<description>杭州 Deep Principle 發布 Hydrogen-1.0：在 GLM-5.3 上以後訓練吃入實驗室完整記錄與發現軌跡（含失敗），並公開模型權重；自報 FrontierScience-Research 38.3%（對比 GPT-6 Astra 33.3%）、GPQA-Diamond 93.0%。權重開放給研究者檢查與改寫；基準為公司自測，待獨立複現。</description>
+<pubDate>Tue, 03 Nov 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>SemiAnalysis GDPx：高價值真實工作 Agent 基準，最強僅約 12%</title>
-<link>https://x.com/SemiAnalysis_/status/2117075900575477855</link>
-<guid isPermaLink="true">https://x.com/SemiAnalysis_/status/2117075900575477855</guid>
-<description>SemiAnalysis 發布 GDPx：206 題、11 個高 ROI 領域（晶片、資安、生物、金融、法律等），任務最長約 8 小時。榜首 Claude Opus 5.5 約 12.0%，Gemini 4 Carbon 約 10.9%，GPT-6 Astra 約 9.6%。把評測拉回真實經濟工作與單題成本。</description>
-<pubDate>Mon, 02 Nov 2026 19:40:00 +0800</pubDate>
+<title>Anthropic Message Threads：Messages API 公開 Beta，長 Agent 少傳歷史</title>
+<link>https://x.com/ClaudeDevs/status/2117332449382510884</link>
+<guid isPermaLink="true">https://x.com/ClaudeDevs/status/2117332449382510884</guid>
+<description>ClaudeDevs 宣布 Message Threads 進入公開 Beta：伺服器緩存對話，後續回合只送新訊息與上一則 message ID。官方稱 50 萬–100 萬 token 請求中位首字延遲約降 35%；多數 Claude Code 已預設開啟。模型仍讀完整上下文，不省 token／費用；執行緒閒置約 5 分鐘過期。</description>
+<pubDate>Tue, 03 Nov 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>Patrick Collison「Liquid software」：Improvements 框讓 Agent 直接改應用</title>
-<link>https://x.com/patrickc/status/2116636967517798672</link>
-<guid isPermaLink="true">https://x.com/patrickc/status/2116636967517798672</guid>
-<description>Stripe CEO 在個人 vibe-coded 應用加入自由文字 improvements 輸入，接到會 YOLO 實作的 agent：提需求後背景實作、測試、部署。有人幾天內提交約 150 項改進；他稱為 liquid software，並自問可維護性、協作與安全如何擴展。</description>
-<pubDate>Mon, 02 Nov 2026 19:40:00 +0800</pubDate>
+<title>OpenAI Dots：擴充 Astra／Terra 等多模型，瞄準更廣用戶</title>
+<link>https://x.com/thsottiaux/status/2117283124833055196</link>
+<guid isPermaLink="true">https://x.com/thsottiaux/status/2117283124833055196</guid>
+<description>OpenAI Dots 負責人 Tibo 宣布正擴充驅動 Dots 的前沿模型家族，含 GPT-6 Astra、GPT-6.1 Terra 與後續型號；Terra 主打速度與個性，並稱有助把 Dots 帶給更多人。屬進行中擴充／路線圖，尚無明確上線日。</description>
+<pubDate>Tue, 03 Nov 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>美團 LongCat-2.5：1.6T MoE 原生多模態，主打長程智能體</title>
-<link>https://x.com/xiax0603/status/2117111177591562354</link>
-<guid isPermaLink="true">https://x.com/xiax0603/status/2117111177591562354</guid>
-<description>美團龍貓發布 LongCat-2.5 正式版：總參數約 1.6 萬億、每 token 激活約 480 億，強化原生視覺理解與智能體編程，定位長程 agent 任務；計劃經 GitHub／Hugging Face 開源權重，API 已可體驗。X 一級轉發偏少，榜單宣稱待官方與權重上線後核對。</description>
-<pubDate>Mon, 02 Nov 2026 19:40:00 +0800</pubDate>
+<title>OpenAI Pando：自建 Git 後端，Agent 洪峰下 push 延遲約降八成</title>
+<link>https://x.com/OpenAIDevs/status/2117408792346509663</link>
+<guid isPermaLink="true">https://x.com/OpenAIDevs/status/2117408792346509663</guid>
+<description>OpenAI Developers 公開 Pando——為 monorepo 打造的新 Git 後端，不改工程師與 agent 的 Git 用法；官方稱 push 延遲約降 80%，日處理近 1 PB Git 資料，並回饋部分修補給上游 Git。</description>
+<pubDate>Tue, 03 Nov 2026 09:00:00 +0800</pubDate>
+</item>
+<item>
+<title>Workers IO：確定性 hypervisor 對整系統打數百萬故障模擬</title>
+<link>https://x.com/chaaai/status/2117331381206516115</link>
+<guid isPermaLink="true">https://x.com/chaaai/status/2117331381206516115</guid>
+<description>YC 創辦人 Chaitanya 發布 Workers IO：在確定性 hypervisor 內對整套系統（含依賴）注入網路延遲、磁碟錯誤、時鐘偏移、行程崩潰等，跑數百萬生產情境模擬並可完美重現失敗，瞄準 agent 加速寫碼後的驗證瓶頸。</description>
+<pubDate>Tue, 03 Nov 2026 09:00:00 +0800</pubDate>
 </item>
 </channel>
 </rss>
