@@ -5,48 +5,48 @@
 <link>https://taihangfu.github.io/ai-news-daily/</link>
 <description>每日來自 X 的 AI 新工具與產品簡報</description>
 <language>zh-Hant</language>
-<lastBuildDate>Fri, 06 Nov 2026 09:00:00 +0800</lastBuildDate>
+<lastBuildDate>Sat, 07 Nov 2026 09:00:00 +0800</lastBuildDate>
 <item>
-<title>OpenAI 發布 GPT-6 Cyber：對準資安研究的專用模型</title>
-<link>https://x.com/OpenAI/status/2118390190246879554</link>
-<guid isPermaLink="true">https://x.com/OpenAI/status/2118390190246879554</guid>
-<description>OpenAI 官方宣布推出 GPT-6 Cyber，強調更強的安全研究能力與對齊；已用於 Linux 核心漏洞研究，並向 Mozilla、Palo Alto Networks、Cisco 等精選 Daybreak Red 客戶開放，後續再擴量。非一般 ChatGPT Pro 全量開放；能力宣稱待獨立驗證。</description>
-<pubDate>Fri, 06 Nov 2026 09:00:00 +0800</pubDate>
+<title>Anthropic 公開 Claude agent memory 架構與「dreaming」整理機制</title>
+<link>https://x.com/AnthropicAI/status/2118814753154064501</link>
+<guid isPermaLink="true">https://x.com/AnthropicAI/status/2118814753154064501</guid>
+<description>Anthropic 工程部落格說明 agent memory 如何讓 Claude 從經驗學習，並以「dreaming」整理已學內容、修正錯誤、方便下次取用。屬架構／研究披露，非新模型或新產品線上架；能力與可用性依原產品為準。</description>
+<pubDate>Sat, 07 Nov 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>Google Gemini Omni 1.2 Flash：原生 15 秒影片、降價約 30%</title>
-<link>https://x.com/Google/status/2118390406316728555</link>
-<guid isPermaLink="true">https://x.com/Google/status/2118390406316728555</guid>
-<description>Google 官方推出 Gemini Omni 1.2 Flash（DeepMind）：原生可生成／編輯最長 15 秒影片，支援多輪對話式修改與更自然多說話人口型；720p 約 $0.07／秒（較 1.1 降約 30%），並可升到 1080p／4K；Gemini API 與企業端可用。</description>
-<pubDate>Fri, 06 Nov 2026 09:00:00 +0800</pubDate>
+<title>Meta 將 Muse Wonder 專用模型帶入 Muse 與 Meta AI</title>
+<link>https://x.com/AIatMeta/status/2118768974779634084</link>
+<guid isPermaLink="true">https://x.com/AIatMeta/status/2118768974779634084</guid>
+<description>AI at Meta 宣布把以 Muse Wonder 訓練的專用模型帶到 Muse 與 Meta AI，含 Active Memory（辨識先前資訊是否仍相關）與 Active Focus（約束變化時脫困／找替代）。官方自報在 Muse 上關鍵目標遺忘降約 2.4 倍、卡住時脫困改善約 67%；數字為公司測評。</description>
+<pubDate>Sat, 07 Nov 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>Thinking Machines Inkling 2 Small：AA Index 31，權重即將開源</title>
-<link>https://x.com/thinkymachines/status/2118489527362912566</link>
-<guid isPermaLink="true">https://x.com/thinkymachines/status/2118489527362912566</guid>
-<description>Thinking Machines 官方發布 Inkling 2 Small，稱 AA Intelligence Index 得 31；已可在 Tinker 做微調與推理，完整權重計劃很快放出。二級轉述指約 594B MoE／17B active，以官方與模型卡為準。</description>
-<pubDate>Fri, 06 Nov 2026 09:00:00 +0800</pubDate>
+<title>OpenAI 發布 BioBasicsBench：濕實驗日常分析基準</title>
+<link>https://x.com/OpenAI/status/2118782708767965238</link>
+<guid isPermaLink="true">https://x.com/OpenAI/status/2118782708767965238</guid>
+<description>OpenAI 與酶設計新創 Ligo 推出 BioBasicsBench，含 100 項真實實驗任務，測 AI agent 解讀原始實驗數據、找錯、並判斷證據是否支持結論。目標是濕實驗日常分析，非新 frontier 模型；生物安全／生物安保語境並存。</description>
+<pubDate>Sat, 07 Nov 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>螞蟻 Ant Ling Ling-3.2-flash：560B／25B 原生多模態</title>
-<link>https://x.com/AntLingAGI/status/2118428246664761379</link>
-<guid isPermaLink="true">https://x.com/AntLingAGI/status/2118428246664761379</guid>
-<description>Ant Ling 宣布 Ling-3.2-flash：總參 560B、激活 25B 的原生多模態 MoE，強調視覺理解、長程多模態 agent、3D 與醫療；自報 OmniDocBench1.5／ZEROBench／Vision2Web 等勝過 Opus 5 (max)。對照表為公司發布評測，待獨立複現。</description>
-<pubDate>Fri, 06 Nov 2026 09:00:00 +0800</pubDate>
+<title>Hugging Face LeRobot v0.7.0：從 TB 資料到即時對機器人下指令</title>
+<link>https://x.com/LeRobotHF/status/2118622053628551431</link>
+<guid isPermaLink="true">https://x.com/LeRobotHF/status/2118622053628551431</guid>
+<description>LeRobot 官方發布 v0.7.0：可直接從 Hub／Storage Bucket／LanceDB 串流訓練（不必先整包下載）；支援互動 rollout（切 subtask、VQA、autosteer）；新增 Cosmos 3／FLUX 3 Action 等 world action models 與多款 VLA；並有遠端推理伺服器。Hub 上 Physical AI 資料約 300TB；含破壞性變更（v0.6.1→v0.7.0）。</description>
+<pubDate>Sat, 07 Nov 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>Hyperstition 開源 Hyperkernel：自動生成 GPU megakernel</title>
-<link>https://x.com/hyperstition_cc/status/2118432349352595528</link>
-<guid isPermaLink="true">https://x.com/hyperstition_cc/status/2118432349352595528</guid>
-<description>Hyperstition 開源 Hyperkernel，稱可用遞迴方式為推理／預訓練／機器人／世界模型等 11 個領域生成單次 launch 的 megakernel；自報相對 NVIDIA 公布的 vLLM 數字，DeepSeek v4.1 Flash 單用戶生成速度可高約 36.7%。基準自報；硬體以 B300 為主。</description>
-<pubDate>Fri, 06 Nov 2026 09:00:00 +0800</pubDate>
+<title>Artificial Analysis 推出 VIALS-AA：生命科學視覺推理榜</title>
+<link>https://x.com/ArtificialAnlys/status/2118752670030700953</link>
+<guid isPermaLink="true">https://x.com/ArtificialAnlys/status/2118752670030700953</guid>
+<description>AA 為 Handshake AI 的 VIALS 基準上線 VIALS-AA 排行榜：161 題跨 8 領域（凝膠、流式、質粒圖等），以 Stirrup agent harness 跑三次取 pass^3。自報 Gemini 4 Carbon (high) 約 64% 領先，GPT-6 Astra (max) 63%、Claude Opus 5.5 61%；開源權重最高約 Kimi K3.1 Pro 45%。評測條件自設，成本／回合數差異大。</description>
+<pubDate>Sat, 07 Nov 2026 09:00:00 +0800</pubDate>
 </item>
 <item>
-<title>月之暗面開源 Kimi K3.1 Pro 權重：約 2.8T MoE 上 Hugging Face</title>
-<link>https://x.com/Kimi_Moonshot/status/2118010528123773297</link>
-<guid isPermaLink="true">https://x.com/Kimi_Moonshot/status/2118010528123773297</guid>
-<description>Moonshot／Kimi 正式放出 Kimi K3.1 Pro 模型權重至 Hugging Face；模型卡描述為約 2.8T 總參、約 104B 激活、1M 上下文的原生多模態 agentic MoE。體積約 1.56TB；授權為 Kimi 自訂條款，非純 MIT。</description>
-<pubDate>Fri, 06 Nov 2026 09:00:00 +0800</pubDate>
+<title>百度開源 ERNIE 5.5 Flash Base：280B／14B 純預訓練基座</title>
+<link>https://x.com/Baidu_Inc/status/2118265920665587935</link>
+<guid isPermaLink="true">https://x.com/Baidu_Inc/status/2118265920665587935</guid>
+<description>Baidu 放出 ERNIE 5.5 Flash Base 權重：稀疏 MoE、總參 280B、每 token 激活 14B，預訓練 33.5T tokens，微調／推理上下文可至 1M；權重為預訓練結束點（無 mid／post-training），FP8／BF16 上 Hugging Face。授權為自訂 ERNIE 條款（含地域與商用條件）；後訓練版計劃後續再出。原帖略早於 24h 窗。</description>
+<pubDate>Sat, 07 Nov 2026 09:00:00 +0800</pubDate>
 </item>
 </channel>
 </rss>

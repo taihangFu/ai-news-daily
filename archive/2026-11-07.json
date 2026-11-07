@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "headlines": [
+    {
+      "meta": "日報 · 2026年11月7日",
+      "title": "Anthropic 公開 Claude agent memory 架構與「dreaming」整理機制",
+      "summary": "Anthropic 工程部落格說明 agent memory 如何讓 Claude 從經驗學習，並以「dreaming」整理已學內容、修正錯誤、方便下次取用。屬架構／研究披露，非新模型或新產品線上架；能力與可用性依原產品為準。",
+      "link": "https://x.com/AnthropicAI/status/2118814753154064501",
+      "community": {
+        "teaser": "Agent 記得住——先看官方怎麼講「做夢」整理記憶。",
+        "voices": "官方帖約 31 萬次曝光、4.6 千讚、337 轉發、219 則引用、約 3.4 千收藏。主軸：dreaming 整理經驗、錯誤校正、跨 session 取回、與產品路線圖是否對齊。",
+        "note": "今天買的是「記憶怎麼做」的工程敘事，不是新模型 API。對照你現有 Claude／agent 工作流再決定要不要改架構假設。"
+      }
+    }
+  ],
+  "reports": [
+    {
+      "date": "2026 年 11 月 7 日 週六",
+      "items": [
+        {
+          "tag": "產品",
+          "title": "Meta 將 Muse Wonder 專用模型帶入 Muse 與 Meta AI",
+          "summary": "AI at Meta 宣布把以 Muse Wonder 訓練的專用模型帶到 Muse 與 Meta AI，含 Active Memory（辨識先前資訊是否仍相關）與 Active Focus（約束變化時脫困／找替代）。官方自報在 Muse 上關鍵目標遺忘降約 2.4 倍、卡住時脫困改善約 67%；數字為公司測評。",
+          "footer": "https://x.com/AIatMeta/status/2118768974779634084",
+          "community": {
+            "teaser": "Wonder 能力下沉到日常 Muse／Meta AI——少重複、少卡死。",
+            "voices": "官方帖約 5 萬次曝光、496 讚、66 轉發、32 則引用。主軸：Active Memory／Focus、2.4×／67% 自報改善、研究部落格細節。",
+            "note": "先確認你用的是 Muse 還是 Meta AI 介面，再對照官方部落格測評條件；自報數字非獨立複現。"
+          }
+        },
+        {
+          "tag": "工具",
+          "title": "OpenAI 發布 BioBasicsBench：濕實驗日常分析基準",
+          "summary": "OpenAI 與酶設計新創 Ligo 推出 BioBasicsBench，含 100 項真實實驗任務，測 AI agent 解讀原始實驗數據、找錯、並判斷證據是否支持結論。目標是濕實驗日常分析，非新 frontier 模型；生物安全／生物安保語境並存。",
+          "footer": "https://x.com/OpenAI/status/2118782708767965238",
+          "community": {
+            "teaser": "濕實驗日常功——先量對數據、再談加速發現。",
+            "voices": "官方帖約 43 萬次曝光、2.4 千讚、167 轉發、196 則引用、約 375 收藏。主軸：100 任務、Ligo 合作、biosafety／biosecurity、與實驗室實務落差。",
+            "note": "基準不是產品功能開關；看的是你的 agent／模型在日常濕實驗流程能不能過關。"
+          }
+        },
+        {
+          "tag": "開源",
+          "title": "Hugging Face LeRobot v0.7.0：從 TB 資料到即時對機器人下指令",
+          "summary": "LeRobot 官方發布 v0.7.0：可直接從 Hub／Storage Bucket／LanceDB 串流訓練（不必先整包下載）；支援互動 rollout（切 subtask、VQA、autosteer）；新增 Cosmos 3／FLUX 3 Action 等 world action models 與多款 VLA；並有遠端推理伺服器。Hub 上 Physical AI 資料約 300TB；含破壞性變更（v0.6.1→v0.7.0）。",
+          "footer": "https://x.com/LeRobotHF/status/2118622053628551431"
+        },
+        {
+          "tag": "工具",
+          "title": "Artificial Analysis 推出 VIALS-AA：生命科學視覺推理榜",
+          "summary": "AA 為 Handshake AI 的 VIALS 基準上線 VIALS-AA 排行榜：161 題跨 8 領域（凝膠、流式、質粒圖等），以 Stirrup agent harness 跑三次取 pass^3。自報 Gemini 4 Carbon (high) 約 64% 領先，GPT-6 Astra (max) 63%、Claude Opus 5.5 61%；開源權重最高約 Kimi K3.1 Pro 45%。評測條件自設，成本／回合數差異大。",
+          "footer": "https://x.com/ArtificialAnlys/status/2118752670030700953"
+        },
+        {
+          "tag": "開源",
+          "title": "百度開源 ERNIE 5.5 Flash Base：280B／14B 純預訓練基座",
+          "summary": "Baidu 放出 ERNIE 5.5 Flash Base 權重：稀疏 MoE、總參 280B、每 token 激活 14B，預訓練 33.5T tokens，微調／推理上下文可至 1M；權重為預訓練結束點（無 mid／post-training），FP8／BF16 上 Hugging Face。授權為自訂 ERNIE 條款（含地域與商用條件）；後訓練版計劃後續再出。原帖略早於 24h 窗。",
+          "footer": "https://x.com/Baidu_Inc/status/2118265920665587935",
+          "community": {
+            "teaser": "純基座開權重——先核授權與磁碟，再談微調。",
+            "voices": "官方帖約 24 萬次曝光、336 讚、47 轉發、33 則引用。主軸：280B／14B、33.5T、1M 上下文、自訂授權排除部分地區、對照 DeepSeek 等自測表。",
+            "note": "原帖 11/05 約 16:55 HKT，略早於本窗；開源≠可任意商用。先讀 LICENSE 再下載。"
+          }
+        }
+      ]
+    }
+  ]
+}

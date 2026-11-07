@@ -2,59 +2,64 @@
   "schemaVersion": 1,
   "headlines": [
     {
-      "meta": "日報 · 2026年11月6日",
-      "title": "OpenAI 發布 GPT-6 Cyber：對準資安研究的專用模型",
-      "summary": "OpenAI 官方宣布推出 GPT-6 Cyber，強調更強的安全研究能力與對齊；已用於 Linux 核心漏洞研究，並向 Mozilla、Palo Alto Networks、Cisco 等精選 Daybreak Red 客戶開放，後續再擴量。非一般 ChatGPT Pro 全量開放；能力宣稱待獨立驗證。",
-      "link": "https://x.com/OpenAI/status/2118390190246879554",
+      "meta": "日報 · 2026年11月7日",
+      "title": "Anthropic 公開 Claude agent memory 架構與「dreaming」整理機制",
+      "summary": "Anthropic 工程部落格說明 agent memory 如何讓 Claude 從經驗學習，並以「dreaming」整理已學內容、修正錯誤、方便下次取用。屬架構／研究披露，非新模型或新產品線上架；能力與可用性依原產品為準。",
+      "link": "https://x.com/AnthropicAI/status/2118814753154064501",
       "community": {
-        "teaser": "資安專線模型上線——先給紅隊客戶，不是全站換腦。",
-        "voices": "官方帖約 165 萬次曝光、1.39 萬讚、1.3 千轉發、858 則引用、約 2.3 千收藏。主軸：Daybreak Red 分級開放、Linux 核心漏洞研究敘事、與 Astra／Terra／Dots 同代但獨立產品線、能力對齊 vs 攻擊面風險。",
-        "note": "今天買的是「專用資安模型」產品線，不是通用 GPT-6 升級。先核對你是否在 Daybreak Red 名單，再談是否換掉現有掃描工具。"
+        "teaser": "Agent 記得住——先看官方怎麼講「做夢」整理記憶。",
+        "voices": "官方帖約 31 萬次曝光、4.6 千讚、337 轉發、219 則引用、約 3.4 千收藏。主軸：dreaming 整理經驗、錯誤校正、跨 session 取回、與產品路線圖是否對齊。",
+        "note": "今天買的是「記憶怎麼做」的工程敘事，不是新模型 API。對照你現有 Claude／agent 工作流再決定要不要改架構假設。"
       }
     }
   ],
   "reports": [
     {
-      "date": "2026 年 11 月 6 日 週五",
+      "date": "2026 年 11 月 7 日 週六",
       "items": [
         {
           "tag": "產品",
-          "title": "Google Gemini Omni 1.2 Flash：原生 15 秒影片、降價約 30%",
-          "summary": "Google 官方推出 Gemini Omni 1.2 Flash（DeepMind）：原生可生成／編輯最長 15 秒影片，支援多輪對話式修改與更自然多說話人口型；720p 約 $0.07／秒（較 1.1 降約 30%），並可升到 1080p／4K；Gemini API 與企業端可用。",
-          "footer": "https://x.com/Google/status/2118390406316728555",
+          "title": "Meta 將 Muse Wonder 專用模型帶入 Muse 與 Meta AI",
+          "summary": "AI at Meta 宣布把以 Muse Wonder 訓練的專用模型帶到 Muse 與 Meta AI，含 Active Memory（辨識先前資訊是否仍相關）與 Active Focus（約束變化時脫困／找替代）。官方自報在 Muse 上關鍵目標遺忘降約 2.4 倍、卡住時脫困改善約 67%；數字為公司測評。",
+          "footer": "https://x.com/AIatMeta/status/2118768974779634084",
           "community": {
-            "teaser": "影片更長、更便宜——創作者產線直接改成本表。",
-            "voices": "官方帖約 35 萬次曝光、2.4 千讚、232 轉發、134 則引用。主軸：15 秒長度、對話式改鏡、降價 30%、運動／複雜物理仍在改進（官方自述）。",
-            "note": "長度與單秒成本是可驗證槓桿；複雜物理與體育鏡頭仍可能翻車，先小批量試跑再上廣告產線。"
+            "teaser": "Wonder 能力下沉到日常 Muse／Meta AI——少重複、少卡死。",
+            "voices": "官方帖約 5 萬次曝光、496 讚、66 轉發、32 則引用。主軸：Active Memory／Focus、2.4×／67% 自報改善、研究部落格細節。",
+            "note": "先確認你用的是 Muse 還是 Meta AI 介面，再對照官方部落格測評條件；自報數字非獨立複現。"
           }
         },
         {
-          "tag": "模型",
-          "title": "Thinking Machines Inkling 2 Small：AA Index 31，權重即將開源",
-          "summary": "Thinking Machines 官方發布 Inkling 2 Small，稱 AA Intelligence Index 得 31；已可在 Tinker 做微調與推理，完整權重計劃很快放出。二級轉述指約 594B MoE／17B active，以官方與模型卡為準。",
-          "footer": "https://x.com/thinkymachines/status/2118489527362912566"
-        },
-        {
-          "tag": "模型",
-          "title": "螞蟻 Ant Ling Ling-3.2-flash：560B／25B 原生多模態",
-          "summary": "Ant Ling 宣布 Ling-3.2-flash：總參 560B、激活 25B 的原生多模態 MoE，強調視覺理解、長程多模態 agent、3D 與醫療；自報 OmniDocBench1.5／ZEROBench／Vision2Web 等勝過 Opus 5 (max)。對照表為公司發布評測，待獨立複現。",
-          "footer": "https://x.com/AntLingAGI/status/2118428246664761379"
-        },
-        {
-          "tag": "開源",
-          "title": "Hyperstition 開源 Hyperkernel：自動生成 GPU megakernel",
-          "summary": "Hyperstition 開源 Hyperkernel，稱可用遞迴方式為推理／預訓練／機器人／世界模型等 11 個領域生成單次 launch 的 megakernel；自報相對 NVIDIA 公布的 vLLM 數字，DeepSeek v4.1 Flash 單用戶生成速度可高約 36.7%。基準自報；硬體以 B300 為主。",
-          "footer": "https://x.com/hyperstition_cc/status/2118432349352595528"
-        },
-        {
-          "tag": "開源",
-          "title": "月之暗面開源 Kimi K3.1 Pro 權重：約 2.8T MoE 上 Hugging Face",
-          "summary": "Moonshot／Kimi 正式放出 Kimi K3.1 Pro 模型權重至 Hugging Face；模型卡描述為約 2.8T 總參、約 104B 激活、1M 上下文的原生多模態 agentic MoE。體積約 1.56TB；授權為 Kimi 自訂條款，非純 MIT。",
-          "footer": "https://x.com/Kimi_Moonshot/status/2118010528123773297",
+          "tag": "工具",
+          "title": "OpenAI 發布 BioBasicsBench：濕實驗日常分析基準",
+          "summary": "OpenAI 與酶設計新創 Ligo 推出 BioBasicsBench，含 100 項真實實驗任務，測 AI agent 解讀原始實驗數據、找錯、並判斷證據是否支持結論。目標是濕實驗日常分析，非新 frontier 模型；生物安全／生物安保語境並存。",
+          "footer": "https://x.com/OpenAI/status/2118782708767965238",
           "community": {
-            "teaser": "超大開源權重上架——下載門檻比分數更刺耳。",
-            "voices": "官方帖約 95 萬次曝光、8.4 千讚、825 轉發、456 則引用、約 1.5 千收藏。主軸：2.8T／HF 權重、自訂授權、本地／雲端承載成本、與閉源旗艦對位敘事。",
-            "note": "先確認授權與磁碟／叢集承載，再談能不能複現官宣基準。原帖略早於 24h 窗，但權重故事仍在發酵。"
+            "teaser": "濕實驗日常功——先量對數據、再談加速發現。",
+            "voices": "官方帖約 43 萬次曝光、2.4 千讚、167 轉發、196 則引用、約 375 收藏。主軸：100 任務、Ligo 合作、biosafety／biosecurity、與實驗室實務落差。",
+            "note": "基準不是產品功能開關；看的是你的 agent／模型在日常濕實驗流程能不能過關。"
+          }
+        },
+        {
+          "tag": "開源",
+          "title": "Hugging Face LeRobot v0.7.0：從 TB 資料到即時對機器人下指令",
+          "summary": "LeRobot 官方發布 v0.7.0：可直接從 Hub／Storage Bucket／LanceDB 串流訓練（不必先整包下載）；支援互動 rollout（切 subtask、VQA、autosteer）；新增 Cosmos 3／FLUX 3 Action 等 world action models 與多款 VLA；並有遠端推理伺服器。Hub 上 Physical AI 資料約 300TB；含破壞性變更（v0.6.1→v0.7.0）。",
+          "footer": "https://x.com/LeRobotHF/status/2118622053628551431"
+        },
+        {
+          "tag": "工具",
+          "title": "Artificial Analysis 推出 VIALS-AA：生命科學視覺推理榜",
+          "summary": "AA 為 Handshake AI 的 VIALS 基準上線 VIALS-AA 排行榜：161 題跨 8 領域（凝膠、流式、質粒圖等），以 Stirrup agent harness 跑三次取 pass^3。自報 Gemini 4 Carbon (high) 約 64% 領先，GPT-6 Astra (max) 63%、Claude Opus 5.5 61%；開源權重最高約 Kimi K3.1 Pro 45%。評測條件自設，成本／回合數差異大。",
+          "footer": "https://x.com/ArtificialAnlys/status/2118752670030700953"
+        },
+        {
+          "tag": "開源",
+          "title": "百度開源 ERNIE 5.5 Flash Base：280B／14B 純預訓練基座",
+          "summary": "Baidu 放出 ERNIE 5.5 Flash Base 權重：稀疏 MoE、總參 280B、每 token 激活 14B，預訓練 33.5T tokens，微調／推理上下文可至 1M；權重為預訓練結束點（無 mid／post-training），FP8／BF16 上 Hugging Face。授權為自訂 ERNIE 條款（含地域與商用條件）；後訓練版計劃後續再出。原帖略早於 24h 窗。",
+          "footer": "https://x.com/Baidu_Inc/status/2118265920665587935",
+          "community": {
+            "teaser": "純基座開權重——先核授權與磁碟，再談微調。",
+            "voices": "官方帖約 24 萬次曝光、336 讚、47 轉發、33 則引用。主軸：280B／14B、33.5T、1M 上下文、自訂授權排除部分地區、對照 DeepSeek 等自測表。",
+            "note": "原帖 11/05 約 16:55 HKT，略早於本窗；開源≠可任意商用。先讀 LICENSE 再下載。"
           }
         }
       ]
